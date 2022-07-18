@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -16,6 +16,7 @@
     "react-icons": "^4.4.0",
     "react-scroll-parallax": "^3.2.0",
     "scrollreveal": "^4.0.9",
+    "sharp": "^0.30.7",
     "swiper": "^8.3.0"
   },
   "devDependencies": {

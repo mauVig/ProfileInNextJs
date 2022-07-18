@@ -1,26 +1,28 @@
 import Image from 'next/image';
 import matias from '../../public/img/matiasKochlowski.jpg';
 import loesen from '../../public/img/loesen.png';
-import LinkToPages from './LinksToPages'
+import LinkToPages from './LinksToPages';
 
 export default function Loesen() {
   return (
     <>
-      <article className='flex items-start gap-6 mt-6 '>
-        <Image
-          src={matias}
-          alt='m'
-          className=' rounded-lg'
-          width={300}
-          height={300}
-        />
+      <article className='flex items-start gap-6'>
+        <a href='https://loesen.co/es' target='_blanck'>
+          <Image
+            src={matias}
+            alt='Loesen'
+            className=' rounded-lg'
+            width={300}
+            height={300}
+          />
+        </a>
         <div>
           <header className='flex items-center gap-3'>
             <a
               href='https://loesen.co/es'
               target='_blanck'
               className='flex items-center gap-3'
-            > 
+            >
               <Image
                 src={loesen}
                 alt='Matias Kochlowski'
@@ -37,7 +39,14 @@ export default function Loesen() {
             </a>
           </header>
           <div className=''>
-            <p className='mt-6 text-lg'>&quot;Ha sido un placer trabajar con Mauro. Aprende rápido y trabaja bien con los demás. En su paso por Loesen ha progresado favorablemente en sus conocimientos de diseño front-end, TailwindCSS y NextJS. Ha demostrado habilidades para resolver problemas y ha hecho valiosas sugerencias sobre cómo mejorar nuestras aplicaciones.&quot;</p>
+            <p className='mt-6 text-lg'>
+              &quot;Ha sido un placer trabajar con Mauro. Aprende rápido y
+              trabaja bien con los demás. En su paso por Loesen ha progresado
+              favorablemente en sus conocimientos de diseño front-end,
+              TailwindCSS y NextJS. Ha demostrado habilidades para resolver
+              problemas y ha hecho valiosas sugerencias sobre cómo mejorar
+              nuestras aplicaciones.&quot;
+            </p>
           </div>
           <LinkToPages links={links} />
         </div>
@@ -47,7 +56,7 @@ export default function Loesen() {
 }
 
 const links = [
-  { 
+  {
     name: 'Logipartes.com.ar',
     href: 'https://logipartes.com.ar/',
   },

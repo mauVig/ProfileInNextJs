@@ -13,10 +13,11 @@ export default function ModalContact() {
 
   const [all, setAll] = useState('');
   
+  const nameLocal = 'formData'
 
   useEffect(()=>{
-    if ( localStorage.getItem('formMauro')){
-      setAll(JSON.parse(localStorage.getItem('formMauro')))
+    if ( localStorage.getItem(nameLocal)){
+      setAll(JSON.parse(localStorage.getItem(nameLocal)))
       setName(all.name)
       setEmail(all.email)
       setText(all.text)
@@ -24,7 +25,7 @@ export default function ModalContact() {
   },[])
 
   useEffect(() => {
-    localStorage.setItem('formMauro', JSON.stringify({ name, email, text }));
+    localStorage.setItem(nameLocal, JSON.stringify({ name, email, text }));
   }, [name, email, text]);
 
   // localStorage.setItem('user', JSON.stringify(data.user))

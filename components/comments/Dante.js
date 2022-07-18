@@ -1,19 +1,19 @@
 import Image from 'next/image';
-import matias from '../../public/img/matiasKochlowski.jpg';
+import perfil from '../../public/img/dantePerfil.jpg';
 import dante from '../../public/img/rayo-page.png';
 import LinkToPages from './LinksToPages';
 
 export default function Dante() {
   return (
     <>
-      <article className='flex items-start gap-6 mt-6'>
+      <article className='flex items-start gap-6 '>
         <a href='https://dantebronzini.com.ar' target='_blanck'>
           <Image
-            src={matias}
+            src={perfil}
             alt='m'
-            className=' rounded-lg'
-            width={1000}
-            height={1000}
+            className='rounded-lg'
+            width={300}
+            height={300}
           />
         </a>
         <div>
@@ -40,21 +40,7 @@ export default function Dante() {
           </header>
           <div className=''>
             <p className='mt-6 text-lg'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. In unde
-              nesciunt iure minus dolor repellat recusandae repellendus
-              officiis. Consequuntur corporis provident incidunt et nesciunt
-              soluta quo! Deleniti omnis obcaecati corrupti. Lorem, ipsum dolor
-              sit amet consectetur adipisicing elit. In unde nesciunt iure minus
-              dolor repellat recusandae repellendus officiis. Consequuntur
-              corporis provident incidunt et nesciunt soluta quo! Deleniti omnis
-              obcaecati corrupti. Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. In unde nesciunt iure minus dolor repellat
-              recusandae repellendus officiis. Consequuntur corporis provident
-              incidunt et nesciunt soluta quo! Deleniti omnis obcaecati
-              corrupti. Lorem, ipsum dolor sit amet consectetur adipisicing
-              elit. In unde nesciunt iure minus dolor repellat recusandae
-              repellendus officiis. Consequuntur corporis provident incidunt et
-              nesciunt soluta quo! Deleniti omnis obcaecati corrupti.
+            &quot;Le quiero agradecer a Mauro por la página que me hizo, realmente la necesitaba para trabajar. Me encanto el estilo y colores que uso, y como utilizó las fotos. Ahora tengo un lugar donde agregar toda la música nueva que hago, y también informar en los lugares que voy a tocar.&quot;
             </p>
           </div>
           <LinkToPages links={links} />

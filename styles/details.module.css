@@ -8,6 +8,7 @@
 .h1Trun{
     text-overflow:ellipsis;
     white-space:nowrap;
+    margin-left: -2px;
 }
 .swiperH::before{
     content:'';
@@ -84,3 +85,4 @@
     min-height: 10rem;
     max-height:10rem;
 }
+

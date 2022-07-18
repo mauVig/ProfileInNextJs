@@ -33,10 +33,10 @@ export default function Home() {
       </section>
 
       {/* Testimonios */}
-      <section className='relative bg-black-500 z-30'>
-        <div className='max-w-7xl mx-auto text-gray-500 pt-6 '>
-          <h2 className='text-3xl'>Experiencia</h2>
-          <div className='max-w-7xl mx-auto text-gray-500 pt-6 '>
+      <section className='relative bg-black-500 z-30 pt-20 '>
+        <div className='max-w-7xl mx-auto text-gray-500  '>
+          <h2 className=' absolute hidden'>Experiencia</h2>
+          <div className='max-w-7xl mx-auto text-gray-500  '>
             <Loesen />
           </div>
         </div>
@@ -47,13 +47,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='relative bg-black-500 z-30 pt-20'>
-        <div className='max-w-7xl mx-auto text-gray-500 py-6 '>
+      <section className='relative bg-black-500 z-30 pt-20 '>
+        <div className='max-w-7xl mx-auto text-gray-500 '>
           <Dante />
         </div>
       </section>
       <section className='relative bg-black-500'>
-        <div className='  text-gray-500'>
+        <div className='text-gray-500'>
           <ParallaxAll name='dante' />
         </div>
       </section>

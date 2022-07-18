@@ -35,17 +35,17 @@ export default function Header() {
               .
             </p>
             <div className='flex my-12'>
-              <a href='#' className='hover:scale-125 transition-all -ml-2'>
-                <TbBrandLinkedin className='text-skin-500 text-5xl mr-6' />
+              <a href='#' className='hover:scale-125 transition-all -ml-1'>
+                <TbBrandLinkedin className='text-skin-500 text-4xl mr-6' />
               </a>
               <a href='#' className='hover:scale-125 transition-all'>
-                <TbBrandInstagram className='text-skin-500 text-5xl mx-6' />
+                <TbBrandInstagram className='text-skin-500 text-4xl mx-6' />
               </a>
               <a href='#' className='hover:scale-125 transition-all'>
-                <TbBrandGithub className='text-skin-500 text-5xl mx-6' />
+                <TbBrandGithub className='text-skin-500 text-4xl mx-6' />
               </a>
             </div>
-            <button className='flex items-center bg-skin-500  text-black-500 pl-8 pr-11 pr-15 py-2 -ml-1 rounded-lg  hover:bg-skin-700 transition-all duration-100 '>
+            <button className='flex items-center bg-skin-500  text-black-500 pl-8 pr-11 pr-15 py-2  rounded-lg  hover:bg-skin-700 transition-all duration-100 '>
               <div className='flex items-center gap-2'>
                 <TbCloudDownload className='text-lg' />
                 <span className=' font-medium text-md'>Descargar CV</span>
