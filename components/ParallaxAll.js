@@ -4,27 +4,34 @@ import { Parallax } from 'react-scroll-parallax';
 // import logipartes from '../public/img/logipartes.jpg';
 // import dante from '../public/img/dante.jpg';
 
-import st from '../styles/details.module.css'
+import st from '../styles/details.module.css';
 
 export default function ParallaxLoesen({ name }) {
-  // const img = name === 'dante'      ? dante : '' || 
+  // const img = name === 'dante'      ? dante : '' ||
   //             name === 'logipartes' ? logipartes : '';
   const [who, setWho] = useState();
 
-  const dante = '/img/dante.jpg'
-  const matias = '/img/logipartes.jpg'
+  const dante = '/img/dante.jpg';
+  const matias = '/img/logipartes.jpg';
 
-
-  useEffect(()=>{
-    if (name === 'dante' ) setWho(dante)
-    if (name === 'logipartes' ) setWho(matias)
-  },[])
+  useEffect(() => {
+    if (name === 'dante') setWho(dante);
+    if (name === 'logipartes') setWho(matias);
+  }, []);
   return (
     <>
       <div className={`overflow-hidden ${st.diagonal}`}>
         <Parallax speed={-90}>
           <div className={`h-screen -z-10 `}>
-            <Image src={who} alt='Logipartes' layout='fill' />
+            <Image
+              src={who}
+              layout='fill'
+              alt={
+                name === 'dante'
+                  ? 'El es Dante Bronzini'
+                  : 'Es el repositorio de Fabricante.logipartes.com.ar'
+              }
+            />
           </div>
         </Parallax>
       </div>
