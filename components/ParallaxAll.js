@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Parallax } from 'react-scroll-parallax';
 import logipartes from '../public/img/logipartes.jpg';
 import dante from '../public/img/dante.jpg';
+
 import st from '../styles/details.module.css'
 
 export default function ParallaxLoesen({ name }) {
