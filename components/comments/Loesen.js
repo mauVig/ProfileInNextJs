@@ -1,6 +1,4 @@
-import Image from 'next/image';
-import matias from '../../public/img/matiasKochlowski.jpg';
-import loesen from '../../public/img/loesen.png';
+
 import LinkToPages from './LinksToPages';
 
 export default function Loesen() {
@@ -8,8 +6,8 @@ export default function Loesen() {
     <>
       <article className='flex items-start gap-6'>
         <a href='https://loesen.co/es' target='_blanck'>
-          <Image
-            src={matias}
+          <img
+            src='/img/matiasKochlowski.jpg'
             alt='Loesen'
             className=' rounded-lg'
             width={300}
@@ -23,8 +21,8 @@ export default function Loesen() {
               target='_blanck'
               className='flex items-center gap-3'
             >
-              <Image
-                src={loesen}
+              <img
+                src='/img/loesen.png'
                 alt='Matias Kochlowski'
                 width={50}
                 height={50}

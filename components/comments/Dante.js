@@ -1,6 +1,4 @@
-import Image from 'next/image';
-import perfil from '../../public/img/dantePerfil.jpg';
-import dante from '../../public/img/rayo-page.png';
+
 import LinkToPages from './LinksToPages';
 
 export default function Dante() {
@@ -8,9 +6,9 @@ export default function Dante() {
     <>
       <article className='flex items-start gap-6 '>
         <a href='https://dantebronzini.com.ar' target='_blanck'>
-          <Image
-            src={perfil}
-            alt='m'
+          <img
+            src='/img/dantePerfil.jpg'
+            alt='Dante Bronzini'
             className='rounded-lg'
             width={300}
             height={300}
@@ -23,9 +21,9 @@ export default function Dante() {
               target='_blanck'
               className='flex items-center gap-3'
             >
-              <Image
-                src={dante}
-                alt='Dante Bronzini'
+              <img
+                src='/img/rayo-page.png'
+                alt='Un rayo, icono de Dante Bronzini'
                 width={50}
                 height={50}
                 className='rounded-full'
@@ -40,7 +38,11 @@ export default function Dante() {
           </header>
           <div className=''>
             <p className='mt-6 text-lg'>
-            &quot;Le quiero agradecer a Mauro por la página que me hizo, realmente la necesitaba para trabajar. Me encanto el estilo y colores que uso, y como utilizó las fotos. Ahora tengo un lugar donde agregar toda la música nueva que hago, y también informar en los lugares que voy a tocar.&quot;
+              &quot;Le quiero agradecer a Mauro por la página que me hizo,
+              realmente la necesitaba para trabajar. Me encanto el estilo y
+              colores que uso, y como utilizó las fotos. Ahora tengo un lugar
+              donde agregar toda la música nueva que hago, y también informar en
+              los lugares que voy a tocar.&quot;
             </p>
           </div>
           <LinkToPages links={links} />

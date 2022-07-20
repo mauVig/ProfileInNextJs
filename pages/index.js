@@ -12,11 +12,31 @@ import Footer from '../components/footer/Footer'
 
 import st from '../styles/details.module.css';
 
+import { useScrollDirection } from 'react-use-scroll-direction'
+
 export default function Home() {
   const scrollPage = useRef();
-
+  const { 
+    isScrolling,
+    isScrollingX,
+    isScrollingY,
+    isScrollingUp, 
+    isScrollingDown,
+    isScrollingLeft,
+    isScrollingRight,
+    scrollDirection,
+  } = useScrollDirection()
   return (
-    <>
+    <div onWheel={ event => {
+      
+console.log(event,'--ev')
+
+      // if (event.nativeEvent.wheelDelta > 0) {
+      //   console.log('scroll up');
+      // } else {
+      //   console.log('scroll down');
+      // }
+    }}>
       <div
         className={`bg-black-500 w-full min-h-screen 
         ${st.headerBlock} z-50 relative`}
@@ -68,6 +88,6 @@ export default function Home() {
         <Contact />
       </section>
       <Footer />
-    </>
+    </div>
   );
 }

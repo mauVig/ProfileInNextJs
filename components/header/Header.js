@@ -1,7 +1,6 @@
 import { useRef, useEffect } from 'react';
-import Image from 'next/image';
 
-import mau from '/public/img/full-stack-mauro-vigliero.png';
+
 import {
   TbCloudDownload,
   TbBrandLinkedin,
@@ -16,12 +15,17 @@ export default function Header() {
     <>
       <header className='h-screen grid grid-cols-2 text-gray-500'>
         <div className='flex justify-start items-center'>
-          <Image src={mau} alt='Mauro' />
+          <img
+            src='/img/full-stack-mauro-vigliero.png'
+            alt='Mauro'
+            layout='fill'
+          />
         </div>
         <div className='flex justify-center items-center'>
           <div>
             <h1 className={`text-5xl mb-10 mt-3 ${st.h1Trun}`}>
-              <span className='text-skin-500'>M</span>auro <span className='text-skin-500'>V</span>igliero
+              <span className='text-skin-500'>M</span>auro{' '}
+              <span className='text-skin-500'>V</span>igliero
             </h1>
             <p className=' text-xl mb-6'>
               Soy desarrollador

@@ -1,8 +1,7 @@
 import { RiMailSendFill } from 'react-icons/ri';
 import { BiWorld } from 'react-icons/bi';
 
-import Image from 'next/image';
-import beach from '../../public/img/playa.jpg';
+
 
 import ModalContact from './ModalContact';
 
@@ -11,10 +10,10 @@ export default function contact() {
     <>
       <div className='relative bg-gray-800 h-screen'>
         <div className='h-56 bg-blue-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2 rounded-3xl'>
-          <Image
+          <img
             className='w-full h-full object-cover'
-            src={beach}
-            alt=''
+            src='/img/playa.jpg'
+            alt='AAAA'
             layout='fill'
           />
         </div>
@@ -42,4 +41,3 @@ export default function contact() {
     </>
   );
 }
-
