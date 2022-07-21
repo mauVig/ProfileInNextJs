@@ -7,7 +7,7 @@ import st from '../styles/details.module.css';
 export default function ParallaxLoesen({ name }) {
   const [who, setWho] = useState();
 
-  const dante = '/img/playa.jpg';
+  const dante = '/img/danteBro.jpg';
   const matias = '/img/logipartes.jpg';
 
   useEffect(() => {

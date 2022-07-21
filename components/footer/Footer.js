@@ -36,7 +36,7 @@ export default function Footer() {
           ))}
         </div>
         <p className='mt-8 text-center text-sm'>
-          &copy; {year} Mauro Daniel Vigliero | Derechos reservados.
+          &copy; {year} Mauro Daniel Vigliero | Derechos reservados
         </p>
       </div>
     </footer>
