@@ -36,25 +36,26 @@
 
 .headerBlock{
     transition: all;
-    animation: moveHeaderBlock 15s ;
-    -webkit-animation: moveHeaderBlock 15s ;
+    animation: moveHeaderBlock 8s ;
+    -webkit-animation: moveHeaderBlock 8s ;
 }
 @keyframes moveHeaderBlock {
-    50%,80%{
+    40%{
         transform:translateY(0);
         -webkit-transform:translateY(0);
         -moz-transform:translateY(0);
         -ms-transform:translateY(0);
         -o-transform:translateY(0);
     }
-    52%{
-        transform:translateY(-2rem);
-        -webkit-transform:translateY(-2rem);
-        -moz-transform:translateY(-2rem);
-        -ms-transform:translateY(-2rem);
-        -o-transform:translateY(-2rem);
+    0%{
+        transform:translateY(-4rem);
+        -webkit-transform:translateY(-4rem);
+        -moz-transform:translateY(-4rem);
+        -ms-transform:translateY(-4rem);
+        -o-transform:translateY(-4rem);
     }
 }
+
 
 .cvHover:hover span{
     letter-spacing:2px;

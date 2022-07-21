@@ -38,9 +38,9 @@ export default function Header() {
               </span>
               .
             </p>
-            <div className='flex my-12'>
-              <a href='#' className='hover:scale-125 transition-all -ml-1'>
-                <TbBrandLinkedin className='text-skin-500 text-4xl mr-6' />
+            <div className='flex my-12 -ml-7'>
+              <a href='#' className='hover:scale-125 transition-all'>
+                <TbBrandLinkedin className='text-skin-500 text-4xl mx-6' />
               </a>
               <a href='#' className='hover:scale-125 transition-all'>
                 <TbBrandInstagram className='text-skin-500 text-4xl mx-6' />

@@ -25,7 +25,7 @@ export default function Skills() {
             </p>
             <p>
               Disfruto del tiempo cuando estudio algún <span>lenguaje</span>,{' '}
-              <span>framework</span> o <span>Librerías</span>.
+              <span>framework</span> o <span>librería</span>.
             </p>
           </div>
         </div>

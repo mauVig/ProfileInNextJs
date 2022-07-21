@@ -4,7 +4,7 @@ import LinkToPages from './LinksToPages';
 export default function Loesen() {
   return (
     <>
-      <article className='flex items-start gap-6'>
+      <article className='flex items-start gap-6 '>
         <a href='https://loesen.co/es' target='_blanck'>
           <img
             src='/img/matiasKochlowski.jpg'
@@ -35,7 +35,7 @@ export default function Loesen() {
               </div>
             </a>
           </header>
-          <div className=''>
+          <div>
             <p className='mt-6 text-lg'>
               &quot;Ha sido un placer trabajar con Mauro. Aprende rápido y
               trabaja bien con los demás. En su paso por Loesen ha progresado
@@ -47,6 +47,7 @@ export default function Loesen() {
           </div>
           <LinkToPages links={links} />
         </div>
+        
       </article>
     </>
   );

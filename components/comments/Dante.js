@@ -10,11 +10,10 @@ export default function Dante() {
             src='/img/dantePerfil.jpg'
             alt='Dante Bronzini'
             className='rounded-lg'
-            width={300}
-            height={300}
+            width={150}
           />
         </a>
-        <div>
+        <div className='w-1/2'>
           <header className='flex items-center gap-3'>
             <a
               href='https://dantebronzini.com.ar'
@@ -45,6 +44,7 @@ export default function Dante() {
               los lugares que voy a tocar.&quot;
             </p>
           </div>
+          
           <LinkToPages links={links} />
         </div>
       </article>

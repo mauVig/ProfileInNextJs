@@ -6,41 +6,30 @@ import Skills from '../components/skills/Skills';
 import Loesen from '../components/comments/Loesen';
 import Dante from '../components/comments/Dante';
 import ParallaxAll from '../components/ParallaxAll';
-import AbautMe from '../components/abautMe/AbautMe';
 import Contact from '../components/contact/Contact';
-import Footer from '../components/footer/Footer'
+import Footer from '../components/footer/Footer';
 
 import st from '../styles/details.module.css';
 
-import { useScrollDirection } from 'react-use-scroll-direction'
+import { useScrollDirection } from 'react-use-scroll-direction';
 
 export default function Home() {
-  const scrollPage = useRef();
-  const { 
+  const {
     isScrolling,
     isScrollingX,
     isScrollingY,
-    isScrollingUp, 
+    isScrollingUp,
     isScrollingDown,
     isScrollingLeft,
     isScrollingRight,
     scrollDirection,
-  } = useScrollDirection()
+  } = useScrollDirection();
+  console.log(scrollDirection, '--scrollDirection');
   return (
-    <div onWheel={ event => {
-      
-console.log(event,'--ev')
-
-      // if (event.nativeEvent.wheelDelta > 0) {
-      //   console.log('scroll up');
-      // } else {
-      //   console.log('scroll down');
-      // }
-    }}>
+    <>
       <div
         className={`bg-black-500 w-full min-h-screen 
-        ${st.headerBlock} z-50 relative`}
-        ref={scrollPage}
+        z-50 relative ${st.headerBlock}`}
       >
         <div className='max-w-5xl mx-auto'>
           <Header />
@@ -53,7 +42,7 @@ console.log(event,'--ev')
       </section>
 
       {/* Testimonios */}
-      <section className='relative bg-black-500 z-30 pt-20 '>
+      <section className='relative bg-black-500 z-30 pt-44 '>
         <div className='max-w-7xl mx-auto text-gray-500  '>
           <h2 className=' absolute hidden'>Experiencia</h2>
           <div className='max-w-7xl mx-auto text-gray-500  '>
@@ -67,7 +56,7 @@ console.log(event,'--ev')
         </div>
       </section>
 
-      <section className='relative bg-black-500 z-30 pt-20 '>
+      <section className='relative bg-black-500 z-30 pt-44 '>
         <div className='max-w-7xl mx-auto text-gray-500 '>
           <Dante />
         </div>
@@ -79,15 +68,10 @@ console.log(event,'--ev')
       </section>
       {/* Testimonios */}
 
-      {/* <section className='relative bg-skin-700 py-6 z-30'>
-        <div className='max-w-7xl mx-auto '>
-          <AbautMe />
-        </div>
-      </section> */}
       <section className='relative bg-black-500 z-30 overflow-hidden'>
         <Contact />
       </section>
       <Footer />
-    </div>
+    </>
   );
 }
