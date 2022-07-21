@@ -1,8 +1,7 @@
 // import Head from 'next/head'
-import { useState, useRef, useEffect } from 'react';
 
 import Header from '../components/header/Header';
-import NavBar from '../components/header/NavBar'
+import NavBar from '../components/header/NavBar';
 import Skills from '../components/skills/Skills';
 import Loesen from '../components/comments/Loesen';
 import Dante from '../components/comments/Dante';
@@ -12,20 +11,7 @@ import Footer from '../components/footer/Footer';
 
 import st from '../styles/details.module.css';
 
-import { useScrollDirection } from 'react-use-scroll-direction';
-
 export default function Home() {
-  const {
-    isScrolling,
-    isScrollingX,
-    isScrollingY,
-    isScrollingUp,
-    isScrollingDown,
-    isScrollingLeft,
-    isScrollingRight,
-    scrollDirection,
-  } = useScrollDirection();
-  console.log(scrollDirection, '--scrollDirection');
   return (
     <>
       <NavBar />

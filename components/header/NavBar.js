@@ -1,6 +1,14 @@
 import { Menu, Transition } from '@headlessui/react';
 import { useState } from 'react';
+import { useRouter } from 'next/router'
 export default function NavBar() {
+  // const router = useRouter()
+  // const espaniol = () => {
+  //   router.push('')
+  // }
+  // const english = () => {
+    
+  // }
   return (
     <>
       <div className='sticky top-0 bg-black-600 z-50 '>
@@ -10,7 +18,7 @@ export default function NavBar() {
             <div>
               <Menu>
                 <Menu.Button className='text-skin-500 '>
-                 Choose Lenguage
+                  Choose Lenguage
                 </Menu.Button>
                 <Transition
                   enter='transition-opacity duration-150'
@@ -22,24 +30,20 @@ export default function NavBar() {
                 >
                   <Menu.Items className='flex flex-col absolute divide-y-2'>
                     <Menu.Item className=' bg-skin-300 hover:bg-skin-400 text-black-500 text-center p-1 w-32'>
-                      {({ active }) => (
-                        <a
-                          className={`${active && 'bg-blue-500'}`}
-                          href='/account-settings'
-                        >
-                          Español
-                        </a>
-                      )}
-                    </Menu.Item>                    
+                      <a
+                        onClick={espaniol}
+                        href='localhost:3000'
+                      >
+                        Español
+                      </a>
+                    </Menu.Item>
                     <Menu.Item className=' bg-skin-300 hover:bg-skin-400 text-black-500 text-center rounded-br-lg rounded-bl-lg p-1 w-32'>
-                    {({ active }) => (
-                        <a
-                          className={`${active && 'bg-blue-500'}`}
-                          href='/account-settings'
-                        >
-                          Ingles
-                        </a>
-                      )}
+                      <a
+                        onClick={english}
+                        href='#'
+                      >
+                        Ingles
+                      </a>
                     </Menu.Item>
                   </Menu.Items>
                 </Transition>
