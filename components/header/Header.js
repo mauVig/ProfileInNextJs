@@ -13,7 +13,7 @@ import st from '../../styles/details.module.css';
 export default function Header() {
   return (
     <>
-      <header className='h-screen grid grid-cols-2 text-gray-500'>
+      <header className={`h-screen grid grid-cols-2 text-gray-500 ${st.efectHeader}`}>
         <div className='flex justify-start items-center'>
           <img
             src='/img/full-stack-mauro-vigliero.png'
