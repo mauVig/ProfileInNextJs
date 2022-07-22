@@ -11,26 +11,26 @@ import 'swiper/css/pagination';
 
 import Card from './Card';
 
-export default function Skills() {
+export default function Skills({ len }) {
   return (
     <>
       <section>
         <h2 className='absolute hidden'>Skills</h2>
         <div className='flex justify-center my-32'>
           <div className='text-xl leading-9 max-w-lg'>
-            <p >
-              Me encanta programar en cualquier lenguaje.
-              <br /> Pero no solo es hacer, sino que también es aprender,
-              estudiar, practicar, desafiarse a uno mismo.
-            </p>
             <p>
-              Disfruto del tiempo cuando estudio algún <span>lenguaje</span>,{' '}
-              <span>framework</span> o <span>librería</span>.
+              {len
+                ? 'Me encanta programar en cualquier lenguaje.'
+                : 'I love programming in any language.'}
+              <br />
+              {len
+                ? 'Pero no solo es hacer, sino que también es aprender, estudiar, practicar, desafiarse a uno mismo. Disfruto del tiempo cuando estudio algún lenguaje, framework o librería.'
+                : 'But it´s not only doing, also is learning, studying, practicing, challenge yourself. I enjoy the time when I´m studying some language, framework or library.'}
             </p>
           </div>
         </div>
         <div className='w-full my-32'>
-          <div className='p-6'>
+          <div className='p-6 hover:cursor-pointer'>
             <Swiper
               slidesPerView={5}
               spaceBetween={20}

@@ -4,7 +4,7 @@ import { Dialog, Transition } from '@headlessui/react';
 import { IoMdContacts } from 'react-icons/io';
 import st from '../../styles/details.module.css';
 
-export default function ModalContact() {
+export default function ModalContact({ len }) {
   const [open, setOpen] = useState(false);
 
   const [name, setName] = useState('');
@@ -12,24 +12,21 @@ export default function ModalContact() {
   const [text, setText] = useState('');
 
   const [all, setAll] = useState('');
-  
-  const nameLocal = 'formData'
 
-  useEffect(()=>{
-    if ( localStorage.getItem(nameLocal)){
-      setAll(JSON.parse(localStorage.getItem(nameLocal)))
-      setName(all.name)
-      setEmail(all.email)
-      setText(all.text)
+  const nameLocal = 'formData';
+
+  useEffect(() => {
+    if (localStorage.getItem(nameLocal)) {
+      setAll(JSON.parse(localStorage.getItem(nameLocal)));
+      setName(all.name);
+      setEmail(all.email);
+      setText(all.text);
     }
-  },[])
+  }, []);
 
   useEffect(() => {
     localStorage.setItem(nameLocal, JSON.stringify({ name, email, text }));
   }, [name, email, text]);
-
-  // localStorage.setItem('user', JSON.stringify(data.user))
-  // JSON.parse(localStorage.getItem('user'))
 
   return (
     <>
@@ -39,7 +36,9 @@ export default function ModalContact() {
       >
         <div className='flex items-center gap-2'>
           <IoMdContacts className='text-lg' />
-          <span className=' font-medium text-md'>Contacto</span>
+          <span className=' font-medium text-md'>
+            {len ? 'Contacto' : 'Contact'}
+          </span>
         </div>
       </button>
       <Transition.Root show={open} as={Fragment}>
@@ -85,7 +84,7 @@ export default function ModalContact() {
                     <div className='grid gap-8'>
                       <div>
                         <label className='text-sm'>
-                          Nombre
+                          {len ? 'Nombre' : 'Name'}
                           <input
                             type='text'
                             className=' w-96 p-2 bg-black-300 text-white focus:outline-none'
@@ -108,8 +107,8 @@ export default function ModalContact() {
                       </div>
 
                       <div>
-                        <label className=' text-sm'>
-                          Mensaje
+                        <label className='text-sm'>
+                          {len ? 'Mensaje' : 'Message'}
                           <textarea
                             type='text'
                             className={` w-96 p-2 bg-black-300 text-white focus:outline-none ${st.area}`}
@@ -118,8 +117,8 @@ export default function ModalContact() {
                           />
                         </label>
                       </div>
-                      <button className='bg-skin-500 text-black-500 py-2 rounded-lg font-semibold'>
-                        Enviar
+                      <button className='bg-skin-500 hover:bg-skin-700 text-black-500 py-2 rounded-lg font-semibold'>
+                        {len ? 'Enviar' : 'Send'}
                       </button>
                     </div>
                   </div>

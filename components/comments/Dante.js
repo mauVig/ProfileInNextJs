@@ -1,7 +1,6 @@
-
 import LinkToPages from './LinksToPages';
 
-export default function Dante() {
+export default function Dante({ len }) {
   return (
     <>
       <article className='flex items-start gap-6 '>
@@ -30,21 +29,22 @@ export default function Dante() {
               <div>
                 <h3 className='text-2xl text-skin-500'>Dante Bronzini</h3>
                 <p className='text-black-200'>
-                  Productor y músico independiente{' '}
+                  {len
+                    ? 'Productor y músico independiente'
+                    : 'Independent producer and musician'}
                 </p>
               </div>
             </a>
           </header>
-          <div className=''>
+          <div>
             <p className='mt-6 text-lg'>
-              &quot;Le quiero agradecer a Mauro por la página que me hizo,
-              realmente la necesitaba para trabajar. Me encanto el estilo y
-              colores que uso, y como utilizó las fotos. Ahora tengo un lugar
-              donde agregar toda la música nueva que hago, y también informar en
-              los lugares que voy a tocar.&quot;
+              &quot;
+              {len
+                ? 'Le quiero agradecer a Mauro por la página que me hizo, realmente la necesitaba para trabajar. Me encanto el estilo y colores que uso, y como utilizó las fotos. Ahora tengo un lugar donde agregar toda la música nueva que hago, y también informar en los lugares que voy a tocar.'
+                : `I want to say thank to Mauro for amazing page he made me. I really needed it to work. I love the styles and colors he used, and how he used the photos. Now I have a place to add all the new music i made, and also telling the people where are the places i'm going to play.`}
+              &quot;
             </p>
           </div>
-          
           <LinkToPages links={links} />
         </div>
       </article>

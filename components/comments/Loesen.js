@@ -1,7 +1,6 @@
-
 import LinkToPages from './LinksToPages';
 
-export default function Loesen() {
+export default function Loesen({ len }) {
   return (
     <>
       <article className='flex items-start gap-6'>
@@ -30,19 +29,20 @@ export default function Loesen() {
               <div>
                 <h3 className='text-2xl text-skin-500'>Loesen</h3>
                 <p className='text-black-200'>
-                  Soluciones digitales para la posventa automotriz
+                  {len
+                    ? 'Soluciones digitales para la posventa automotriz'
+                    : 'Digital solutions for the automotive aftermarket'}
                 </p>
               </div>
             </a>
           </header>
-          <div className=''>
+          <div >
             <p className='mt-6 text-lg'>
-              &quot;Ha sido un placer trabajar con Mauro. Aprende rápido y
-              trabaja bien con los demás. En su paso por Loesen ha progresado
-              favorablemente en sus conocimientos de diseño front-end,
-              TailwindCSS y NextJS. Ha demostrado habilidades para resolver
-              problemas y ha hecho valiosas sugerencias sobre cómo mejorar
-              nuestras aplicaciones.&quot;
+              &quot;
+              {len
+                ? 'Ha sido un placer trabajar con Mauro. Aprende rápido y trabaja bien con los demás. En su paso por Loesen ha progresado favorablemente en sus conocimientos de diseño front-end, TailwindCSS y NextJS. Ha demostrado habilidades para resolver problemas y ha hecho valiosas sugerencias sobre cómo mejorar nuestras aplicaciones.'
+                : 'It has been a pleasure working with Mauro. Learn fast and works well with others. In this time at Loesen he has progressed favorably on his knowledge of front-end design, TailwindCSS and NextJS. He has demonstrated problem solving skills problems and has made valuable suggestions on how to improve our apps.'}
+              &quot;
             </p>
           </div>
           <LinkToPages links={links} />

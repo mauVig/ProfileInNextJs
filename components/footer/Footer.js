@@ -22,7 +22,7 @@ const navigation = [
   },
 ];
 
-export default function Footer() {
+export default function Footer({ len }) {
   const year = new Date().getFullYear();
   return (
     <footer className='bg-black-600 text-gray-500'>
@@ -36,7 +36,8 @@ export default function Footer() {
           ))}
         </div>
         <p className='mt-8 text-center text-sm'>
-          &copy; {year} Mauro Daniel Vigliero | Derechos reservados
+          &copy; {year} Mauro Daniel Vigliero |{' '}
+          {len ? 'Derechos reservados' : 'All rights reserved'}
         </p>
       </div>
     </footer>

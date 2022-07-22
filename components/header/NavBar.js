@@ -1,14 +1,20 @@
+import { useRouter } from 'next/router';
+
 import { Menu, Transition } from '@headlessui/react';
-import { useState } from 'react';
-import { useRouter } from 'next/router'
-export default function NavBar() {
-  // const router = useRouter()
-  // const espaniol = () => {
-  //   router.push('')
-  // }
-  // const english = () => {
-    
-  // }
+
+export default function NavBar({ len }) {
+  const router = useRouter();
+
+  const espaniol = () => {
+    localStorage.setItem('midiom', 'es');
+
+    router.reload('/');
+  };
+  const ingles = () => {
+    localStorage.setItem('midiom', 'en');
+    router.reload('/');
+  };
+
   return (
     <>
       <div className='sticky top-0 bg-black-600 z-50 '>
@@ -17,8 +23,8 @@ export default function NavBar() {
             <span className='text-2xl text-skin-500 font-medium'>M</span>
             <div>
               <Menu>
-                <Menu.Button className='text-skin-500 '>
-                  Choose Lenguage
+                <Menu.Button className='text-skin-500 hover:text-skin-700 '>
+                  {len ? 'Choose Lenguage' : 'Cambiar Idioma'}
                 </Menu.Button>
                 <Transition
                   enter='transition-opacity duration-150'
@@ -28,22 +34,16 @@ export default function NavBar() {
                   leaveFrom='opacity-100'
                   leaveTo='opacity-0'
                 >
-                  <Menu.Items className='flex flex-col absolute divide-y-2'>
+                  <Menu.Items className='flex flex-col absolute divide-y-2 mt-1'>
                     <Menu.Item className=' bg-skin-300 hover:bg-skin-400 text-black-500 text-center p-1 w-32'>
-                      <a
-                        onClick={espaniol}
-                        href='localhost:3000'
-                      >
-                        Español
-                      </a>
+                      <button onClick={espaniol}>
+                        {len ? 'Spanish' : 'Español'}
+                      </button>
                     </Menu.Item>
                     <Menu.Item className=' bg-skin-300 hover:bg-skin-400 text-black-500 text-center rounded-br-lg rounded-bl-lg p-1 w-32'>
-                      <a
-                        onClick={english}
-                        href='#'
-                      >
-                        Ingles
-                      </a>
+                      <button onClick={ingles}>
+                        {len ? 'English' : 'Ingles'}
+                      </button>
                     </Menu.Item>
                   </Menu.Items>
                 </Transition>
