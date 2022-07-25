@@ -1,17 +1,21 @@
-import { skill } from '../data';
+import { useState } from 'react';
+import { skill } from './data';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode, Autoplay } from 'swiper';
+import { FreeMode, Autoplay, EffectCards } from 'swiper';
 
 import st from '../../styles/details.module.css';
 
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
+import 'swiper/css/effect-cards';
 
 import Card from './Card';
 
 export default function Skills({ len }) {
+  const [cell, setCell] = useState(true);
+
   return (
     <>
       <section>
@@ -32,18 +36,19 @@ export default function Skills({ len }) {
         <div className='w-full my-32'>
           <div className='p-6 hover:cursor-pointer'>
             <Swiper
-              slidesPerView={5}
-              spaceBetween={20}
+              effect={cell ? 'cards' : ''}
+              // slidesPerView={5}
+              // spaceBetween={20}
               freeMode={true}
               pagination={{
                 clickable: true,
               }}
-              modules={[FreeMode, Autoplay]}
+              modules={[EffectCards, FreeMode, Autoplay]}
               autoplay={{
                 delay: 2000,
                 disableOnInteraction: false,
               }}
-              className={st.swiperH}
+              className={`${st.blockSize} ${cell ? '' : st.swiperH} p-4 sm:p-0`}
               loop={true}
             >
               {skill.map((sk) => (

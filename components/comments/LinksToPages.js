@@ -3,7 +3,7 @@ import { VscArrowSmallRight } from "react-icons/vsc";
 export default function LinksToPages({links}) {
   return (
     <>
-      <div className='flex gap-6 mt-6'>
+      <div className='flex gap-6 mt-6 flex-wrap'>
         {links.map((link) => (
           <a
             href={link.href}

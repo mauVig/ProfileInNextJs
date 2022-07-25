@@ -24,7 +24,7 @@ export default function NavBar({ len }) {
             <div>
               <Menu>
                 <Menu.Button className='text-skin-500 hover:text-skin-700 '>
-                  {len ? 'Choose Lenguage' : 'Cambiar Idioma'}
+                  {len ? 'Choose idiom' : 'Cambiar idioma'}
                 </Menu.Button>
                 <Transition
                   enter='transition-opacity duration-150'
@@ -35,14 +35,14 @@ export default function NavBar({ len }) {
                   leaveTo='opacity-0'
                 >
                   <Menu.Items className='flex flex-col absolute divide-y-2 mt-1'>
-                    <Menu.Item className={`bg-skin-300 hover:bg-skin-400 text-black-500 text-center p-1 ${len?'w-32':'w-28'}`}>
+                    <Menu.Item className={`bg-skin-300 hover:bg-skin-400 text-black-500 text-center p-1 ${len?'w-24':'w-28'}`}>
                     {//cambiar w-32}
                     }
                       <button onClick={espaniol}>
                         {len ? 'Spanish' : 'Español'}
                       </button>
                     </Menu.Item>
-                    <Menu.Item className={`bg-skin-300 hover:bg-skin-400 text-black-500 text-center rounded-br-lg rounded-bl-lg p-1 ${len?'w-32':'w-28'}`}>
+                    <Menu.Item className={`bg-skin-300 hover:bg-skin-400 text-black-500 text-center rounded-br-lg rounded-bl-lg p-1 ${len?'w-24':'w-28'}`}>
                       <button onClick={ingles}>
                         {len ? 'English' : 'Ingles'}
                       </button>
