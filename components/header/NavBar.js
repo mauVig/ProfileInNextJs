@@ -18,7 +18,7 @@ export default function NavBar({ len }) {
   return (
     <>
       <div className='sticky top-0 bg-black-600 z-50 '>
-        <div className='max-w-7xl mx-auto'>
+        <div className='max-w-7xl mx-auto py-2 lg:py-0 px-4 xl:px-0'>
           <div className='flex justify-between items-center'>
             <span className='text-2xl text-skin-500 font-medium'>M</span>
             <div>

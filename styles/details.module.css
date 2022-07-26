@@ -32,7 +32,12 @@
     /* background: red; */
     z-index: 5;
 }
-
+@media (max-width:500px){
+    .swiperH::before,
+    .swiperH::after{
+        width:1rem;
+    }
+}
 .headerBlock{
     transition: all;
     animation: moveHeaderBlock 12s;

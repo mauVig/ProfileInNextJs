@@ -3,22 +3,25 @@ import LinkToPages from './LinksToPages';
 export default function Dante({ len }) {
   return (
     <>
-      <article className='flex items-start gap-6 '>
+      <article className='flex flex-col md:flex-row  items-start gap-6 p-4 md:p-0'>
         <a href='https://dantebronzini.com.ar' target='_blanck'>
-          <img
-            src='/img/dantePerfil.jpg'
-            alt='Dante Bronzini'
-            className='rounded-lg'
-            width={150}
-          />
+          <picture>
+            <img
+              src='/img/dantePerfil.jpg'
+              alt='Dante Bronzini'
+              className='rounded-lg'
+              width={150}
+            />
+          </picture>
         </a>
-        <div className='w-1/2'>
-          <header className='flex items-center gap-3'>
+        <div className='md:w-1/2'>
+          <div className='flex items-center gap-3'>
             <a
               href='https://dantebronzini.com.ar'
               target='_blanck'
               className='flex items-center gap-3'
             >
+              <picture>
               <img
                 src='/img/rayo-page.png'
                 alt='Un rayo, icono de Dante Bronzini'
@@ -26,6 +29,7 @@ export default function Dante({ len }) {
                 height={50}
                 className='rounded-full'
               />
+              </picture>
               <div>
                 <h3 className='text-2xl text-skin-500'>Dante Bronzini</h3>
                 <p className='text-black-200'>
@@ -35,7 +39,7 @@ export default function Dante({ len }) {
                 </p>
               </div>
             </a>
-          </header>
+          </div>
           <div>
             <p className='mt-6 text-lg'>
               &quot;

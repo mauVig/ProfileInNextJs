@@ -18,7 +18,7 @@ export default function ParallaxLoesen({ name }) {
     <>
       <div className={`overflow-hidden ${st.diagonal}`}>
         <Parallax speed={-90}>
-          <div className={`h-screen -z-10 `}>
+          <picture className={`h-screen -z-10 `}>
             <img
               src={who}
               width='100%'
@@ -28,7 +28,7 @@ export default function ParallaxLoesen({ name }) {
                   : 'Es el repositorio de Fabricante.logipartes.com.ar'
               }
             />
-          </div>
+          </picture>
         </Parallax>
       </div>
     </>

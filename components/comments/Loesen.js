@@ -3,31 +3,34 @@ import LinkToPages from './LinksToPages';
 export default function Loesen({ len }) {
   return (
     <>
-      <article className='flex items-start gap-6'>
-        <a href='https://loesen.co/es' target='_blanck'>
-          <img
-            src='/img/matiasKochlowski.jpg'
-            alt='Loesen'
-            className=' rounded-lg'
-            width={150}
-          />
-        </a>
-        <div className='w-1/2'>
-          <header className='flex items-center gap-3'>
+      <article className='flex flex-col md:flex-row items-start gap-6 p-4 md:p-0'>
+         <a href='https://loesen.co/es' target='_blanck' className='block'>
+           <picture>
+             <img
+               src='/img/matiasKochlowski.jpg'
+               alt='Loesen'
+               className=' rounded-lg'
+               width={150}
+             />
+           </picture>
+         </a>
+        <div className='md:w-1/2'>
+          <div className='flex items-center gap-3'>
             <a
               href='https://loesen.co/es'
               target='_blanck'
               className='flex items-center gap-3'
             >
-              <img
-                src='/img/loesen.png'
-                alt='Matias Kochlowski'
-                width={50}
-                height={50}
-                className='rounded-full'
-              />
+              <picture>
+                <img
+                  src='/img/loesen.png'
+                  alt='Matias Kochlowski'
+                  width={50}
+                  className='rounded-full'
+                />
+              </picture>
               <div>
-                <h3 className='text-2xl text-skin-500'>Loesen</h3>
+                <h2 className='text-2xl text-skin-500'>Loesen</h2>
                 <p className='text-black-200'>
                   {len
                     ? 'Soluciones digitales para la posventa automotriz'
@@ -35,8 +38,8 @@ export default function Loesen({ len }) {
                 </p>
               </div>
             </a>
-          </header>
-          <div >
+          </div>
+          <div>
             <p className='mt-6 text-lg'>
               &quot;
               {len

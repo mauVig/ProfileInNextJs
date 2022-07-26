@@ -15,6 +15,10 @@ export default function ModalContact({ len }) {
 
   const nameLocal = 'formData';
 
+  const handlerSunmit = () => {
+    setOpen((x) => !x)
+  }
+
   useEffect(() => {
     if (localStorage.getItem(nameLocal)) {
       setAll(JSON.parse(localStorage.getItem(nameLocal)));
@@ -28,10 +32,12 @@ export default function ModalContact({ len }) {
     localStorage.setItem(nameLocal, JSON.stringify({ name, email, text }));
   }, [name, email, text]);
 
+
+
   return (
     <>
       <button
-        className='flex items-center bg-skin-500  text-black-500 pl-7 pr-11 pr-15 py-2  rounded-lg  hover:bg-skin-700 transition-all duration-100 '
+        className='flex items-center bg-skin-500  text-black-500 pl-7 pr-11 pr-15 py-2  rounded-lg  hover:bg-skin-700 transition-all duration-100'
         onClick={() => setOpen((x) => !x)}
       >
         <div className='flex items-center gap-2'>
@@ -61,8 +67,6 @@ export default function ModalContact({ len }) {
             >
               <Dialog.Overlay className='fixed left-0 top-0 bottom-0 w-full bg-black-300 bg-opacity-75 transition-opacity' />
             </Transition.Child>
-
-            {/* This element is to trick the browser into centering the modal contents. */}
             <span
               className='hidden sm:inline-block sm:align-middle sm:h-screen'
               aria-hidden='true'
@@ -117,7 +121,10 @@ export default function ModalContact({ len }) {
                           />
                         </label>
                       </div>
-                      <button className='bg-skin-500 hover:bg-skin-700 text-black-500 py-2 rounded-lg font-semibold'>
+                      <button 
+                        className='bg-skin-500 hover:bg-skin-700 text-black-500 py-2 rounded-lg font-semibold'
+                        onClick={handlerSunmit}
+                        >
                         {len ? 'Enviar' : 'Send'}
                       </button>
                     </div>

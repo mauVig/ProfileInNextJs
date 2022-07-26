@@ -23,10 +23,6 @@ export default function Home() {
         : setLenguage(false);
     }
   }, []);
-
-  // true = es
-  // false = en
-  // {len ? ``:``}
   return (
     <>
       <NavBar len={lenguage} />

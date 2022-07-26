@@ -1,5 +1,3 @@
-import { useRef, useEffect } from 'react';
-
 import {
   TbCloudDownload,
   TbBrandLinkedin,
@@ -10,21 +8,20 @@ import {
 import st from '../../styles/details.module.css';
 
 export default function Header({ len }) {
-  //I have the knowledge to
-  // Build Websites and APPs.
+  
   return (
     <>
-      <header
-        className={`h-screen grid grid-cols-2 text-gray-500 ${st.efectHeader}`}
+      <div
+        className={`min-h-screen grid grid-cols-1 md:grid-cols-2  text-gray-500 ${st.efectHeader}`}
       >
-        <div className='flex justify-start items-center'>
+        <picture className='flex md:justify-start justify-center items-center '>
           <img
             src='/img/full-stack-mauro-vigliero.png'
             alt='Mauro'
             layout='fill'
           />
-        </div>
-        <div className='flex justify-center items-center'>
+        </picture>
+        <div className='flex justify-center items-center py-10 md:py-0 '>
           <div>
             <h1 className={`text-5xl mb-10 mt-3 ${st.h1Trun}`}>
               <span className='text-skin-500'>M</span>auro{' '}
@@ -66,7 +63,7 @@ export default function Header({ len }) {
                 <TbBrandGithub className='text-4xl mx-6' />
               </a>
             </div>
-            <button className='flex items-center bg-skin-500  text-black-500 pl-8 pr-11 pr-15 py-2  rounded-lg  hover:bg-skin-700 transition-all duration-100 '>
+            <button className='flex items-center bg-skin-700  text-black-500 pl-8 pr-11 pr-15 py-2  rounded-lg  hover:bg-skin-800 transition-all duration-100 '>
               <div className='flex items-center gap-2'>
                 <TbCloudDownload className='text-lg' />
                 <span className=' font-medium text-md'>
@@ -76,7 +73,7 @@ export default function Header({ len }) {
             </button>
           </div>
         </div>
-      </header>
+      </div>
     </>
   );
 }

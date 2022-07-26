@@ -28,7 +28,8 @@ module.exports = {
         400:'#fbe7ce',
         500:'#FCDDB8',
         600:'#fbd4a6',
-        700:'#eebd82'
+        700:'#eebd82',
+        800:'#EFAA56',
       },
       white:'#ffffff',
       red:colors.red
