@@ -1,6 +1,5 @@
 // import Head from 'next/head'
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
 
 import Header from '../components/header/Header';
 import NavBar from '../components/header/NavBar';
@@ -43,7 +42,7 @@ export default function Home() {
       {/* Testimonios */}
       <section className='relative bg-black-500 z-30 pt-44 '>
         <div className='max-w-7xl mx-auto text-gray-500  '>
-          <h2 className=' absolute hidden'>Experiencia</h2>
+          <h2 className=''>Experiencia</h2>
           <div className='max-w-7xl mx-auto text-gray-500  '>
             <Loesen len={lenguage} />
           </div>

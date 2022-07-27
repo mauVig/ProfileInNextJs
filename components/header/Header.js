@@ -44,22 +44,28 @@ export default function Header({ len }) {
             </p>
             <div className='flex my-12 -ml-7'>
               <a
-                href='#'
+                href='https://www.linkedin.com/in/maurovigliero/'
+                target='_blank'
+                rel="noreferrer"
                 className='hover:scale-125 transition-all text-skin-500 hover:text-skin-700'
               >
-                <TbBrandLinkedin className='text-4xl mx-6' />
+                <TbBrandLinkedin className='text-4xl mx-6'/>
               </a>
               <a
-                href='#'
+                href='https://www.instagram.com/maurook789/'
+                target='_blank'
+                rel="noreferrer"
                 className='hover:scale-125 transition-all text-skin-500 hover:text-skin-700'
               >
-                <TbBrandInstagram className='text-4xl mx-6' />
+                <TbBrandInstagram className='text-4xl mx-6'/>
               </a>
               <a
-                href='#'
-                className='hover:scale-125 transition-all text-skin-500 hover:text-skin-700'
+                href='https://github.com/mauVig'
+                target='_blank'
+                className='hover:scale-125 transition-all text-skin-500 hover:text-skin-700' 
+                rel="noreferrer"
               >
-                <TbBrandGithub className='text-4xl mx-6' />
+                <TbBrandGithub className='text-4xl mx-6'/>
               </a>
             </div>
             <a

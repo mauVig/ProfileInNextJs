@@ -7,17 +7,17 @@ import {
 const navigation = [
   {
     name: 'Linkedin',
-    href: '#',
+    href: 'https://www.linkedin.com/in/maurovigliero/',
     icon: TbBrandLinkedin,
   },
   {
     name: 'Instagram',
-    href: '#',
+    href: 'https://www.instagram.com/maurook789/',
     icon: TbBrandInstagram,
   },
   {
     name: 'Github',
-    href: '#',
+    href: 'https://github.com/mauVig',
     icon: TbBrandGithub,
   },
 ];
@@ -29,7 +29,12 @@ export default function Footer({ len }) {
       <div className='max-w-7xl mx-auto py-8 px-4 overflow-hidden sm:px-6 lg:px-8'>
         <div className=' flex justify-center space-x-6'>
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className=' '>
+            <a
+              key={item.name}
+              href={item.href}
+              rel='noreferrer'
+              target='_blank'
+            >
               <span className='sr-only'>{item.name}</span>
               <item.icon className='h-6 w-6' aria-hidden='true' />
             </a>
