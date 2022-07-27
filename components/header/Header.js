@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import {
   TbCloudDownload,
   TbBrandLinkedin,
@@ -43,30 +44,16 @@ export default function Header({ len }) {
               .
             </p>
             <div className='flex my-12 -ml-7'>
-              <a
-                href='https://www.linkedin.com/in/maurovigliero/'
-                target='_blank'
-                rel="noreferrer"
-                className='hover:scale-125 transition-all text-skin-500 hover:text-skin-700'
-              >
-                <TbBrandLinkedin className='text-4xl mx-6'/>
-              </a>
-              <a
-                href='https://www.instagram.com/maurook789/'
-                target='_blank'
-                rel="noreferrer"
-                className='hover:scale-125 transition-all text-skin-500 hover:text-skin-700'
-              >
-                <TbBrandInstagram className='text-4xl mx-6'/>
-              </a>
-              <a
-                href='https://github.com/mauVig'
-                target='_blank'
-                className='hover:scale-125 transition-all text-skin-500 hover:text-skin-700' 
-                rel="noreferrer"
-              >
-                <TbBrandGithub className='text-4xl mx-6'/>
-              </a>
+              {net.map((link) => (
+                <a
+                  href={link.href}
+                  target='_blank'
+                  rel='noreferrer'
+                  className='hover:scale-125 transition-all text-skin-500 hover:text-skin-700'
+                >
+                  <link.icon className='text-4xl mx-6' />
+                </a>
+              ))}
             </div>
             <a
               className=' max-w-prose bg-skin-300 md:bg-skin-500 hover:bg-skin-700 block text-black-500 w-fit  pl-8 pr-11 pr-15 py-3 md:py-2  rounded-lg   transition-all duration-100'
@@ -86,3 +73,17 @@ export default function Header({ len }) {
     </>
   );
 }
+const net = [
+  {
+    href: 'https://www.linkedin.com/in/maurovigliero/',
+    icon: TbBrandLinkedin,
+  },
+  {
+    href: 'https://www.instagram.com/maurook789/',
+    icon: TbBrandInstagram,
+  },
+  {
+    href: 'https://github.com/mauVig',
+    icon: TbBrandGithub,
+  },
+];

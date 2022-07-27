@@ -41,7 +41,7 @@ export default function Dante({ len }) {
             </a>
           </div>
           <div>
-            <p className='mt-6 text-lg'>
+            <p className='mt-6 text-lg italic tracking-wider'>
               &quot;
               {len
                 ? 'Le quiero agradecer a Mauro por la página que me hizo, realmente la necesitaba para trabajar. Me encanto el estilo y colores que uso, y como utilizó las fotos. Ahora tengo un lugar donde agregar toda la música nueva que hago, y también informar en los lugares que voy a tocar.'

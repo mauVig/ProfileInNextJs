@@ -40,7 +40,7 @@ export default function Loesen({ len }) {
             </a>
           </div>
           <div>
-            <p className='mt-6 text-lg'>
+            <p className='mt-6 text-lg italic tracking-wider'>
               &quot;
               {len
                 ? 'Ha sido un placer trabajar con Mauro. Aprende rápido y trabaja bien con los demás. En su paso por Loesen ha progresado favorablemente en sus conocimientos de diseño front-end, TailwindCSS y NextJS. Ha demostrado habilidades para resolver problemas y ha hecho valiosas sugerencias sobre cómo mejorar nuestras aplicaciones.'

@@ -21,7 +21,6 @@ const navigation = [
     icon: TbBrandGithub,
   },
 ];
-
 export default function Footer({ len }) {
   const year = new Date().getFullYear();
   return (
