@@ -1,24 +1,35 @@
-
 import { useEffect, useState } from 'react';
 import { Parallax } from 'react-scroll-parallax';
+
+import { useMediaQuery } from 'react-responsive';
 
 import st from '../styles/details.module.css';
 
 export default function ParallaxLoesen({ name }) {
   const [who, setWho] = useState();
 
-  const dante = '/img/danteBro.jpg';
-  const matias = '/img/logipartes.jpg';
+  const cell = useMediaQuery({
+    query: '(max-width: 550px)',
+  });
+  const tablet = useMediaQuery({
+    query: '(max-width: 950px)',
+  });
 
   useEffect(() => {
-    if (name === 'dante') setWho(dante);
-    if (name === 'logipartes') setWho(matias);
+    if (name === 'dante') {
+      if(tablet) setWho('/img/danteBro-tablet.jpg')
+      if(cell) setWho('/img/danteBro-cel.jpg')
+    };
+    if (name === 'logipartes') {
+      if(tablet) setWho('/img/logipartes-tablet.jpg')
+      if(cell) setWho('/img/logipartes-cel.jpg')
+    };
   }, []);
   return (
     <>
       <div className={`overflow-hidden ${st.diagonal}`}>
         <Parallax speed={-90}>
-          <picture className={`h-screen -z-10 `}>
+          <picture className={` min-h-screen -z-10 `}>
             <img
               src={who}
               width='100%'

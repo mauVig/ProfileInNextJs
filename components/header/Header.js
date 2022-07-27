@@ -8,7 +8,6 @@ import {
 import st from '../../styles/details.module.css';
 
 export default function Header({ len }) {
-  
   return (
     <>
       <div
@@ -21,7 +20,7 @@ export default function Header({ len }) {
             layout='fill'
           />
         </picture>
-        <div className='flex justify-center items-center py-10 md:py-0 '>
+        <div className='flex justify-center items-center py-40 md:py-0 '>
           <div>
             <h1 className={`text-5xl mb-10 mt-3 ${st.h1Trun}`}>
               <span className='text-skin-500'>M</span>auro{' '}
@@ -63,14 +62,18 @@ export default function Header({ len }) {
                 <TbBrandGithub className='text-4xl mx-6' />
               </a>
             </div>
-            <button className='flex items-center bg-skin-700  text-black-500 pl-8 pr-11 pr-15 py-2  rounded-lg  hover:bg-skin-800 transition-all duration-100 '>
+            <a
+              className=' max-w-prose bg-skin-300 md:bg-skin-500 block text-black-500 w-fit  pl-8 pr-11 pr-15 py-3 md:py-2  rounded-lg   transition-all duration-100'
+              href={`/sources/Mauro-Vigliero-CV-2022${len ? '' : '-en'}.pdf`}
+              target='_blanck'
+            >
               <div className='flex items-center gap-2'>
                 <TbCloudDownload className='text-lg' />
                 <span className=' font-medium text-md'>
                   {len ? 'Descargar' : 'Download'} CV
                 </span>
               </div>
-            </button>
+            </a>
           </div>
         </div>
       </div>
