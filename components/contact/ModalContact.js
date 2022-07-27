@@ -1,39 +1,14 @@
-/* This example requires Tailwind CSS v2.0+ */
-import { Fragment, useState, useEffect } from 'react';
+import { Fragment, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { IoMdContacts } from 'react-icons/io';
-import st from '../../styles/details.module.css';
-
+import Form from './Form';
+import ThxMsg from './ThxMsg';
 export default function ModalContact({ len }) {
   const [open, setOpen] = useState(false);
-
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [text, setText] = useState('');
-
-  const [all, setAll] = useState('');
-
-  const nameLocal = 'formData';
-
-  const handlerSunmit = () => {
-    setOpen((x) => !x)
-  }
-
-  useEffect(() => {
-    if (localStorage.getItem(nameLocal)) {
-      setAll(JSON.parse(localStorage.getItem(nameLocal)));
-      setName(all.name);
-      setEmail(all.email);
-      setText(all.text);
-    }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem(nameLocal, JSON.stringify({ name, email, text }));
-  }, [name, email, text]);
-
-
-
+  const [thx, setThx] = useState(false);
+  const changToThx = () => {
+    setThx((x) => !x);
+  };
   return (
     <>
       <button
@@ -83,53 +58,8 @@ export default function ModalContact({ len }) {
               leaveTo='opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95'
             >
               <div className='inline-block align-bottom bg-black-500 text-gray-500  rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle max-w-md sm:w-full sm:p-6'>
-                <div>
-                  <div className='flex justify-center p-8'>
-                    <div className='grid gap-8'>
-                      <div>
-                        <label className='text-sm'>
-                          {len ? 'Nombre' : 'Name'}
-                          <input
-                            type='text'
-                            className=' w-96 p-2 bg-black-300 text-white focus:outline-none'
-                            onChange={(e) => setName(e.target.value)}
-                            defaultValue={name}
-                          />
-                        </label>
-                      </div>
-
-                      <div>
-                        <label className=' text-sm'>
-                          Email
-                          <input
-                            type='text'
-                            className='w-96 p-2 bg-black-300 text-white focus:outline-none'
-                            onChange={(e) => setEmail(e.target.value)}
-                            defaultValue={email}
-                          />
-                        </label>
-                      </div>
-
-                      <div>
-                        <label className='text-sm'>
-                          {len ? 'Mensaje' : 'Message'}
-                          <textarea
-                            type='text'
-                            className={` w-96 p-2 bg-black-300 text-white focus:outline-none ${st.area}`}
-                            onChange={(e) => setText(e.target.value)}
-                            defaultValue={text}
-                          />
-                        </label>
-                      </div>
-                      <button 
-                        className='bg-skin-500 hover:bg-skin-700 text-black-500 py-2 rounded-lg font-semibold'
-                        onClick={handlerSunmit}
-                        >
-                        {len ? 'Enviar' : 'Send'}
-                      </button>
-                    </div>
-                  </div>
-                </div>
+                {!thx && <Form len={len} changToThx={changToThx} />}
+                {thx && <ThxMsg len={len} />}
               </div>
             </Transition.Child>
           </div>

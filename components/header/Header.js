@@ -63,7 +63,7 @@ export default function Header({ len }) {
               </a>
             </div>
             <a
-              className=' max-w-prose bg-skin-300 md:bg-skin-500 block text-black-500 w-fit  pl-8 pr-11 pr-15 py-3 md:py-2  rounded-lg   transition-all duration-100'
+              className=' max-w-prose bg-skin-300 md:bg-skin-500 hover:bg-skin-700 block text-black-500 w-fit  pl-8 pr-11 pr-15 py-3 md:py-2  rounded-lg   transition-all duration-100'
               href={`/sources/Mauro-Vigliero-CV-2022${len ? '' : '-en'}.pdf`}
               target='_blanck'
             >

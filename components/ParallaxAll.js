@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { Parallax } from 'react-scroll-parallax';
 
@@ -15,16 +14,21 @@ export default function ParallaxLoesen({ name }) {
   const tablet = useMediaQuery({
     query: '(max-width: 950px)',
   });
+  const pc = useMediaQuery({
+    query: '(min-width: 950px)',
+  });
 
   useEffect(() => {
     if (name === 'dante') {
-      if(tablet) setWho('/img/danteBro-tablet.jpg')
-      if(cell) setWho('/img/danteBro-cel.jpg')
-    };
+      if (pc) setWho('/img/danteBro.jpg');
+      if (tablet) setWho('/img/danteBro-tablet.jpg');
+      if (cell) setWho('/img/danteBro-cel.jpg');
+    }
     if (name === 'logipartes') {
-      if(tablet) setWho('/img/logipartes-tablet.jpg')
-      if(cell) setWho('/img/logipartes-cel.jpg')
-    };
+      if (pc) setWho('/img/logipartes.jpg');
+      if (tablet) setWho('/img/logipartes-tablet.jpg');
+      if (cell) setWho('/img/logipartes-cel.jpg');
+    }
   }, []);
   return (
     <>

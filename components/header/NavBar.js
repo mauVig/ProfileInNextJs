@@ -33,7 +33,7 @@ export default function NavBar({ len }) {
                   leaveFrom='opacity-100'
                   leaveTo='opacity-0'
                 >
-                  <Menu.Items className='flex flex-col absolute divide-y-2 mt-1 w-52'>
+                  <Menu.Items className='flex flex-col absolute divide-y-2 mt-1 '>
                     <Menu.Item
                       className={`bg-skin-300 hover:bg-skin-400 text-black-500 text-center p-1  ${
                         len ? 'w-24' : 'w-28'
