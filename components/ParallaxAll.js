@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 import { Parallax } from 'react-scroll-parallax';
 
@@ -29,7 +30,7 @@ export default function ParallaxLoesen({ name }) {
     <>
       <div className={`overflow-hidden ${st.diagonal}`}>
         <Parallax speed={-90}>
-          <picture className={` min-h-screen -z-10 `}>
+          <picture className={`h-screen -z-10 `}>
             <img
               src={who}
               width='100%'
