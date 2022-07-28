@@ -65,7 +65,6 @@ export default function Form({ len, changToThx }) {
                 />
               </label>
             </div>
-
             <div>
               <label className='text-sm  flex flex-col justify-start'>
                 <span> Email</span>
