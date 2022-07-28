@@ -41,7 +41,7 @@ export default function Header({ len }) {
               <span className='text-skin-500 font-semibold'>
                 {len ? 'Sitios Web y APPs' : 'Websites and APPs'}
               </span>
-              .{''}
+              .
             </p>
             <div className='flex my-12 -ml-7'>
               {net.map((link) => (

@@ -68,7 +68,7 @@ export default function Skills({ len }) {
                 delay: 2000,
                 disableOnInteraction: false,
               }}
-              className={`${st.blockSize} md:${st.swiperH} p-4 sm:p-0`}
+              className={`${st.blockSize} ${st.swiperH} `}
               loop={true}
             >
               {skill.map((sk) => (

@@ -118,3 +118,9 @@
         height: 140vh;
     }
 }
+@media (max-width:550px){
+    .swiperH::before,
+    .swiperH::after{
+        width:0;
+    }
+}
