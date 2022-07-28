@@ -12,7 +12,7 @@ export default function Header({ len }) {
   return (
     <>
       <div
-        className={`min-h-screen grid grid-cols-1 md:grid-cols-2  text-gray-500 ${st.efectHeader}`}
+        className={`min-h-screen grid grid-cols-1 md:grid-cols-2  text-gray-500 md:${st.efectHeader}`}
       >
         <picture className='flex md:justify-start justify-center items-center '>
           <img

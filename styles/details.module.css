@@ -114,10 +114,6 @@
 
 
 @media (max-width:500px){
-    .swiperH::before,
-    .swiperH::after{
-        width:1rem;
-    }
     .diagonal{
         height: 140vh;
     }

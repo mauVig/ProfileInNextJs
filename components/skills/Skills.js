@@ -1,4 +1,3 @@
-
 import {
   TbBrandHtml5,
   TbBrandCss3,
@@ -9,7 +8,7 @@ import {
   TbBrandBootstrap,
   TbBrandFirebase,
   TbBrandPhp,
-  TbBrandVue
+  TbBrandVue,
 } from 'react-icons/tb';
 import { IoLogoNodejs } from 'react-icons/io';
 import { SiMongodb, SiExpress } from 'react-icons/si';
@@ -28,14 +27,12 @@ import 'swiper/css/pagination';
 import Card from './Card';
 
 export default function Skills({ len }) {
-
   const cell = useMediaQuery({
     query: '(max-width: 550px)',
   });
   const tablet = useMediaQuery({
     query: '(max-width: 950px)',
   });
-  
 
   return (
     <>
@@ -55,7 +52,10 @@ export default function Skills({ len }) {
           </div>
         </div>
         <div className='w-full my-32'>
-          <div className='p-6 hover:cursor-pointer'>
+          <h2 className='mb-14 text-3xl text-center mb-26'>
+            {len ? 'Languages' : 'Skills'}
+          </h2>
+          <div className='md:p-6 hover:cursor-pointer'>
             <Swiper
               slidesPerView={tablet ? (cell ? 1.5 : 3) : 5}
               spaceBetween={20}
@@ -68,7 +68,7 @@ export default function Skills({ len }) {
                 delay: 2000,
                 disableOnInteraction: false,
               }}
-              className={`${st.blockSize} ${st.swiperH} p-4 sm:p-0`}
+              className={`${st.blockSize} md:${st.swiperH} p-4 sm:p-0`}
               loop={true}
             >
               {skill.map((sk) => (
@@ -91,71 +91,57 @@ const skill = [
   {
     name: 'HTML 5',
     icon: TbBrandHtml5,
-    
   },
   {
     name: 'CSS 3',
     icon: TbBrandCss3,
-    
   },
   {
     name: 'JavaScript',
     icon: TbBrandJavascript,
-    
   },
   {
     name: 'React Js',
     icon: TbBrandReactNative,
-    
   },
   {
     name: 'Next js',
     icon: TbBrandNextjs,
-    
   },
   {
     name: 'Tailwind Css',
     icon: TbBrandTailwind,
-    
   },
   {
     name: 'Bootstrap',
     icon: TbBrandBootstrap,
-    
   },
   {
     name: 'Node Js',
     icon: IoLogoNodejs,
-    
   },
   {
     name: 'Mongo Db',
     icon: SiMongodb,
-    
   },
   {
     name: 'Express',
     icon: SiExpress,
-    
   },
   {
     name: 'Firebase',
     icon: TbBrandFirebase,
-    
   },
   {
     name: 'PhP',
     icon: TbBrandPhp,
-    
   },
   {
     name: 'My SQL',
     icon: GrMysql,
-    
   },
   {
     name: 'Vue 3',
     icon: TbBrandVue,
-    
   },
 ];
