@@ -42,7 +42,9 @@ export default function Home() {
       {/* Testimonios */}
       <section className='relative bg-black-500 z-30 pt-44 '>
         <div className='max-w-7xl mx-auto text-gray-500  '>
-          <h2 className='mb-14 text-3xl text-center mb-26'>Experiencia</h2>
+          <h2 className='mb-14 text-3xl text-center mb-26'>
+            {lenguage ? 'Experiencia' : 'Experience'}
+          </h2>
           <div className='max-w-7xl mx-auto text-gray-500  '>
             <Loesen len={lenguage} />
           </div>

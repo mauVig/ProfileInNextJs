@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import st from '../../styles/details.module.css';
 
-export default function Form({len,changToThx}) {
+export default function Form({ len, changToThx }) {
   const form = useRef();
 
   const [name, setName] = useState('');
@@ -22,16 +22,16 @@ export default function Form({len,changToThx}) {
         form.current,
         'lrI9ibdJlAO5ikn1J'
       )
-      .then(data =>{
-        changToThx()
-        console.log('Emeil send, res: ' + data.text)
-      })
-          // (result) => {
-          //   console.log(result.text);
-          // },
-          // (error) => {
-          //   console.log(error.text);
-          // }
+      .then((data) => {
+        changToThx();
+        console.log('Emeil send, res: ' + data.text);
+      });
+    // (result) => {
+    //   console.log(result.text);
+    // },
+    // (error) => {
+    //   console.log(error.text);
+    // }
   };
 
   useEffect(() => {
@@ -51,14 +51,14 @@ export default function Form({len,changToThx}) {
   return (
     <>
       <form ref={form} onSubmit={handlerSunmit}>
-        <div className='flex justify-center p-8'>
-          <div className='grid gap-8'>
+        <div className='flex justify-center p-4 sm:p-8'>
+          <div className='grid gap-8 w-80 md:w-96'>
             <div>
-              <label className='text-sm'>
-                {len ? 'Nombre' : 'Name'}
+              <label className='text-sm flex flex-col justify-start'>
+                <span> {len ? 'Nombre' : 'Name'}</span>
                 <input
                   type='text'
-                  className=' w-96 p-2 bg-black-300 text-white focus:outline-none'
+                  className=' p-2 bg-black-300 text-white focus:outline-none'
                   onChange={(e) => setName(e.target.value)}
                   defaultValue={name}
                   name='user_name'
@@ -67,11 +67,11 @@ export default function Form({len,changToThx}) {
             </div>
 
             <div>
-              <label className=' text-sm'>
-                Email
+              <label className='text-sm  flex flex-col justify-start'>
+                <span> Email</span>
                 <input
                   type='text'
-                  className='w-96 p-2 bg-black-300 text-white focus:outline-none'
+                  className='p-2 bg-black-300 text-white focus:outline-none'
                   onChange={(e) => setEmail(e.target.value)}
                   defaultValue={email}
                   name='user_email'
@@ -80,11 +80,11 @@ export default function Form({len,changToThx}) {
             </div>
 
             <div>
-              <label className='text-sm'>
-                {len ? 'Mensaje' : 'Message'}
+              <label className='text-sm flex flex-col justify-start'>
+                <span> {len ? 'Mensaje' : 'Message'}</span>
                 <textarea
                   type='text'
-                  className={`w-96 p-2 bg-black-300 text-white focus:outline-none ${st.area}`}
+                  className={`md:w-96 p-2 bg-black-300 text-white focus:outline-none ${st.area}`}
                   onChange={(e) => setText(e.target.value)}
                   defaultValue={text}
                   name='message'
