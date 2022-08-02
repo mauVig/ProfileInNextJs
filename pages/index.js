@@ -1,4 +1,4 @@
-// import Head from 'next/head'
+import Head from 'next/head'
 import { useState, useEffect } from 'react';
 
 import Header from '../components/header/Header';
@@ -24,6 +24,9 @@ export default function Home() {
   }, []);
   return (
     <>
+    <Head>
+      <title>Mauro Vigliero</title>
+    </Head>
       <NavBar len={lenguage} />
       <header
         className={`bg-black-500 w-full min-h-screen 
