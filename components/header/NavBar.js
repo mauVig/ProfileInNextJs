@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 
 import { Menu, Transition } from '@headlessui/react';
 
+import { Arg, Usa } from './flags';
 export default function NavBar({ len }) {
   const router = useRouter();
 
@@ -23,7 +24,7 @@ export default function NavBar({ len }) {
             <div>
               <Menu>
                 <Menu.Button className='text-skin-500 hover:text-skin-700 '>
-                  {len ? 'Choose idiom' : 'Cambiar idioma'}
+                  {len ? 'Choose leguage' : 'Cambiar lenguaje'}
                 </Menu.Button>
                 <Transition
                   enter='transition-opacity duration-150'
@@ -33,26 +34,17 @@ export default function NavBar({ len }) {
                   leaveFrom='opacity-100'
                   leaveTo='opacity-0'
                 >
-                  <Menu.Items className='flex flex-col absolute divide-y-2 mt-1 '>
-                    <Menu.Item
-                      className={`bg-skin-300 hover:bg-skin-400 text-black-500 text-center p-1 py-3 md:py-1 ${
-                        len ? 'w-24' : 'w-28'
-                      }`}
-                    >
-                      {
-                        //cambiar w-32}
-                      }
-                      <button onClick={espaniol}>
-                        {len ? 'Spanish' : 'Español'}
+                  <Menu.Items className='flex flex-col absolute divide-y-2 mt-1'>
+                    <Menu.Item className='bg-skin-300 hover:bg-skin-400 text-black-500 text-center p-1 py-3 md:py-1 w-28'>
+                      <button onClick={espaniol} className=''>
+                        <Arg className='inline-block align-baseline w-4 mr-2' />
+                        <span>ES</span>
                       </button>
                     </Menu.Item>
-                    <Menu.Item
-                      className={`bg-skin-300 hover:bg-skin-400 text-black-500 text-center p-1 py-3 md:py-1 rounded-br-lg rounded-bl-lg  ${
-                        len ? 'w-24' : 'w-28'
-                      }`}
-                    >
+                    <Menu.Item className='bg-skin-300 hover:bg-skin-400 text-black-500 text-center p-1 py-3 md:py-1 rounded-br-lg rounded-bl-lg w-28'>
                       <button onClick={ingles}>
-                        {len ? 'English' : 'Ingles'}
+                        <Usa className='inline-block align-baseline w-4 mr-2' />
+                        <span>EN</span>
                       </button>
                     </Menu.Item>
                   </Menu.Items>
