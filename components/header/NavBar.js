@@ -43,7 +43,7 @@ export default function NavBar({ len }) {
                     </Menu.Item>
                     <Menu.Item className='bg-skin-300 hover:bg-skin-400 text-black-500 text-center p-1 py-3 md:py-1 rounded-br-lg rounded-bl-lg w-28'>
                       <button onClick={ingles}>
-                        <Usa className='inline-block align-baseline w-4 mr-2' />
+                        <Usa className='inline-block align-baseline ml-1 w-4 mr-2' />
                         <span>EN</span>
                       </button>
                     </Menu.Item>
