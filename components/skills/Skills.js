@@ -46,8 +46,8 @@ export default function Skills({ len }) {
                 : 'I love programming in any language.'}
               <br />
               {len
-                ? 'Pero no solo es hacer, sino que también es aprender, estudiar, practicar, desafiarse a uno mismo. Disfruto del tiempo cuando estudio algún lenguaje, framework o librería.'
-                : 'But it´s not only doing, also is learning, studying, practicing, challenge yourself. I enjoy the time when I´m studying some language, framework or library.'}
+                ? 'Pero no solo es hacer, sino que también es aprender, estudiar, practicar, desafiarse a uno mismo. Disfruto del tiempo programando algún lenguaje, framework o librería.'
+                : 'But it´s not only doing, also is learning, studying, practicing, challenge yourself. I enjoy the time when I´m programming some language, framework or library.'}
             </p>
           </div>
         </div>

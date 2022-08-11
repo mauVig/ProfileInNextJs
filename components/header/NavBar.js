@@ -26,7 +26,7 @@ export default function NavBar({ len }) {
             <div>
               <Menu>
                 <Menu.Button className='text-skin-500 hover:text-skin-700 '>
-                  {len ? 'Choose leguage' : 'Cambiar lenguaje'}
+                  {len ? 'Choose lenguage' : 'Cambiar lenguaje'}
                 </Menu.Button>
                 <Transition
                   enter='transition-opacity duration-150'
