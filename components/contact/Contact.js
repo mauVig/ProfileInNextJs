@@ -5,7 +5,7 @@ import ModalContact from './ModalContact';
 import { UseContextIdiom } from '../../context/ContextIdiom';
 import { useEffect, useState } from 'react';
 
-export default function contact() {
+export default function Contact() {
   const { stateIdiom } = UseContextIdiom();
   const [len, setLen] = useState(stateIdiom);
   useEffect(() => {
