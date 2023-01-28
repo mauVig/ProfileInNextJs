@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import { ContextIdiom } from '../context/ContextIdiom';
 
 import '../styles/globals.css';
 
@@ -13,7 +14,9 @@ function MyApp({ Component, pageProps }) {
   }
   return (
     <ParallaxProvider>
-      <Component {...pageProps} />
+      <ContextIdiom>
+        <Component {...pageProps} />
+      </ContextIdiom>
     </ParallaxProvider>
   );
 }

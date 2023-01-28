@@ -30,6 +30,7 @@ export default function ParallaxLoesen({ name }) {
       if (cell) setWho('/img/logipartes-cel.jpg');
     }
   }, []);
+  
   return (
     <>
       <div className={`overflow-hidden ${st.diagonal}`}>

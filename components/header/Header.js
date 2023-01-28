@@ -7,8 +7,16 @@ import {
 } from 'react-icons/tb';
 
 import st from '../../styles/details.module.css';
+import { UseContextIdiom } from '../../context/ContextIdiom';
+import { useEffect, useState } from 'react';
 
-export default function Header({ len }) {
+export default function Header() {
+  const { stateIdiom } = UseContextIdiom();
+  const [len, setLen] = useState(stateIdiom);
+  useEffect(() => {
+    setLen(stateIdiom);
+  }, [stateIdiom]);
+
   return (
     <>
       <div
@@ -50,6 +58,7 @@ export default function Header({ len }) {
                   target='_blank'
                   rel='noreferrer'
                   className='hover:scale-125 transition-all text-skin-500 hover:text-skin-700'
+                  key={link.id}
                 >
                   <link.icon className='text-4xl mx-6' />
                 </a>
@@ -75,15 +84,14 @@ export default function Header({ len }) {
 }
 const net = [
   {
+    id: 1,
     href: 'https://www.linkedin.com/in/maurovigliero/',
     icon: TbBrandLinkedin,
   },
   {
+    id: 2,
     href: 'https://www.instagram.com/maurook789/',
     icon: TbBrandInstagram,
   },
-  {
-    href: 'https://github.com/mauVig',
-    icon: TbBrandGithub,
-  },
+  { id: 3, href: 'https://github.com/mauVig', icon: TbBrandGithub },
 ];

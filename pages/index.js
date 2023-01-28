@@ -11,34 +11,31 @@ import Contact from '../components/contact/Contact';
 import Footer from '../components/footer/Footer';
 
 import st from '../styles/details.module.css';
+import { UseContextIdiom } from '../context/ContextIdiom';
 
 export default function Home() {
-  const [lenguage, setLenguage] = useState(true);
-
+  const { stateIdiom } = UseContextIdiom();
+  const [len, setLen] = useState(stateIdiom);
   useEffect(() => {
-    if (localStorage.getItem('midiom')) {
-      localStorage.getItem('midiom') === 'es'
-        ? setLenguage(true)
-        : setLenguage(false);
-    }
-  }, []);
+    setLen(stateIdiom);
+  }, [stateIdiom]);
   return (
     <>
       <Head>
         <title>Mauro Vigliero</title>
       </Head>
-      <NavBar len={lenguage} />
+      <NavBar  />
       <header
         className={`bg-black-500 w-full min-h-screen 
         z-40 relative ${st.headerBlock}`}
       >
         <div className='max-w-5xl mx-auto'>
-          <Header len={lenguage} />
+          <Header />
         </div>
       </header>
       <section className={`relative bg-skin-500 py-6 z-30 ${st.skillBefore}`}>
         <div className='max-w-7xl mx-auto '>
-          <Skills len={lenguage} />
+          <Skills />
         </div>
       </section>
 
@@ -46,10 +43,10 @@ export default function Home() {
       <section className='relative bg-black-500 z-30 pt-44 '>
         <div className='max-w-7xl mx-auto text-gray-500  '>
           <h2 className='mb-14 text-3xl text-center mb-26'>
-            {lenguage ? 'Experiencia' : 'Experience'}
+            {len ? 'Experiencia' : 'Experience'}
           </h2>
           <div className='max-w-7xl mx-auto text-gray-500  '>
-            <Loesen len={lenguage} />
+            <Loesen />
           </div>
         </div>
       </section>
@@ -59,22 +56,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='relative bg-black-500 z-30 pt-44 '>
+      {/* <section className='relative bg-black-500 z-30 pt-44 '>
         <div className='max-w-7xl mx-auto text-gray-500 '>
           <Dante len={lenguage} />
         </div>
-      </section>
-      <section className='relative bg-black-500'>
+      </section> */}
+      {/* <section className='relative bg-black-500'>
         <div className='text-gray-500'>
           <ParallaxAll name='dante' />
         </div>
-      </section>
+      </section> */}
       {/* Testimonios */}
 
       <section className='relative bg-black-500 z-30 overflow-hidden'>
-        <Contact len={lenguage} />
+        <Contact />
       </section>
-      <Footer len={lenguage} />
+      <Footer />
     </>
   );
 }

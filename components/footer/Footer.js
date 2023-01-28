@@ -1,8 +1,10 @@
+import { useEffect, useState } from 'react';
 import {
   TbBrandLinkedin,
   TbBrandInstagram,
   TbBrandGithub,
 } from 'react-icons/tb';
+import { UseContextIdiom } from '../../context/ContextIdiom';
 
 const navigation = [
   {
@@ -21,7 +23,12 @@ const navigation = [
     icon: TbBrandGithub,
   },
 ];
-export default function Footer({ len }) {
+export default function Footer() {
+  const { stateIdiom } = UseContextIdiom();
+  const [len, setLen] = useState(stateIdiom);
+  useEffect(() => {
+    setLen(stateIdiom);
+  }, [stateIdiom]);
   const year = new Date().getFullYear();
   return (
     <footer className='bg-black-600 text-gray-500'>

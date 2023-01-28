@@ -17,7 +17,7 @@ import { GrMysql } from 'react-icons/gr';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode, Autoplay } from 'swiper';
 import { useMediaQuery } from 'react-responsive';
-
+import { UseContextIdiom } from '../../context/ContextIdiom';
 import st from '../../styles/details.module.css';
 
 import 'swiper/css';
@@ -25,14 +25,21 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
 import Card from './Card';
+import { useEffect, useState } from 'react';
 
-export default function Skills({ len }) {
+export default function Skills() {
+  const { stateIdiom } = UseContextIdiom();  
+  const [len, setLen] = useState(stateIdiom);
+  useEffect(() => {
+    setLen(stateIdiom);
+  }, [stateIdiom]);
   const cell = useMediaQuery({
     query: '(max-width: 550px)',
   });
   const tablet = useMediaQuery({
     query: '(max-width: 950px)',
   });
+
 
   return (
     <>
@@ -47,7 +54,7 @@ export default function Skills({ len }) {
               <br />
               {len
                 ? 'Pero no solo es hacer, sino que también es aprender, estudiar, practicar, desafiarse a uno mismo. Disfruto del tiempo programando algún lenguaje, framework o librería.'
-                : 'But it´s not only doing, also is learning, studying, practicing, challenge yourself. I enjoy the time when I´m programming some language, framework or library.'}
+                : 'But it´s not only do, also is learning, studying, practicing, challenge yourself. I enjoy the time when I´m programming some language, framework or library.'}
             </p>
           </div>
         </div>

@@ -1,6 +1,13 @@
+import { useEffect, useState } from 'react';
+import { UseContextIdiom } from '../../context/ContextIdiom';
 import LinkToPages from './LinksToPages';
 
-export default function Loesen({ len }) {
+export default function Loesen() {
+  const { stateIdiom } = UseContextIdiom();  
+  const [len, setLen] = useState(stateIdiom);
+  useEffect(() => {
+    setLen(stateIdiom);
+  }, [stateIdiom]);
   return (
     <>
       <article className='flex flex-col md:flex-row items-start gap-6 p-4 md:p-0'>

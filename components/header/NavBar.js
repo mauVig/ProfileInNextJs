@@ -1,20 +1,22 @@
-import { useRouter } from 'next/router';
-
 import { Menu, Transition } from '@headlessui/react';
-
 import { Arg, Usa } from './flags';
-export default function NavBar({ len }) {
-  const router = useRouter();
+import { UseContextIdiom } from '../../context/ContextIdiom';
+import { useEffect, useState } from 'react';
 
+export default function NavBar() {
+  const { esp, eng, stateIdiom } = UseContextIdiom();
   const espaniol = () => {
     localStorage.setItem('midiom', 'es');
-    router.reload('/');
+    esp();
   };
   const ingles = () => {
     localStorage.setItem('midiom', 'en');
-    router.reload('/');
+    eng();
   };
-
+  const [len, setLen] = useState(stateIdiom);
+  useEffect(() => {
+    setLen(stateIdiom);
+  }, [stateIdiom]);
   return (
     <>
       <div className='sticky top-0 bg-black-600 z-50 '>
