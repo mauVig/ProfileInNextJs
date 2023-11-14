@@ -30,9 +30,11 @@ import { useEffect, useState } from 'react';
 export default function Skills() {
   const { stateIdiom } = UseContextIdiom();  
   const [len, setLen] = useState(stateIdiom);
+  
   useEffect(() => {
     setLen(stateIdiom);
   }, [stateIdiom]);
+
   const cell = useMediaQuery({
     query: '(max-width: 550px)',
   });

@@ -13,6 +13,7 @@ import { useEffect, useState } from 'react';
 export default function Header() {
   const { stateIdiom } = UseContextIdiom();
   const [len, setLen] = useState(stateIdiom);
+  
   useEffect(() => {
     setLen(stateIdiom);
   }, [stateIdiom]);

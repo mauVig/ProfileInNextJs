@@ -8,9 +8,11 @@ import { useEffect, useState } from 'react';
 export default function Contact() {
   const { stateIdiom } = UseContextIdiom();
   const [len, setLen] = useState(stateIdiom);
+
   useEffect(() => {
     setLen(stateIdiom);
   }, [stateIdiom]);
+  
   return (
     <>
       <div className='relative bg-gray-800 md:h-screen'>

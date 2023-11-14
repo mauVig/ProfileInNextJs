@@ -19,11 +19,6 @@ export default function ParallaxLoesen({ name }) {
   });
 
   useEffect(() => {
-    if (name === 'dante') {
-      if (pc) setWho('/img/danteBro.jpg');
-      if (tablet) setWho('/img/danteBro-tablet.jpg');
-      if (cell) setWho('/img/danteBro-cel.jpg');
-    }
     if (name === 'logipartes') {
       if (pc) setWho('/img/logipartes.jpg');
       if (tablet) setWho('/img/logipartes-tablet.jpg');
