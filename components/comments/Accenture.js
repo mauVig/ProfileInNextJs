@@ -31,7 +31,7 @@ export default function Accenture() {
             >
               <div>
                 <h2 className='text-3xl text-skin-500'>Accenture</h2>
-                <p className='text-black-200'>Bootcamp</p>
+                <p className='text-black-200'>Empresa multinacional</p>
               </div>
             </a>
           </div>
