@@ -11,8 +11,9 @@ import {
   TbBrandVue,
 } from 'react-icons/tb';
 import { IoLogoNodejs } from 'react-icons/io';
-import { SiMongodb, SiExpress } from 'react-icons/si';
+import { SiMongodb, SiExpress, SiTypescript } from 'react-icons/si';
 import { GrMysql } from 'react-icons/gr';
+import { FaAngular } from 'react-icons/fa';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode, Autoplay } from 'swiper';
@@ -28,9 +29,9 @@ import Card from './Card';
 import { useEffect, useState } from 'react';
 
 export default function Skills() {
-  const { stateIdiom } = UseContextIdiom();  
+  const { stateIdiom } = UseContextIdiom();
   const [len, setLen] = useState(stateIdiom);
-  
+
   useEffect(() => {
     setLen(stateIdiom);
   }, [stateIdiom]);
@@ -42,12 +43,11 @@ export default function Skills() {
     query: '(max-width: 950px)',
   });
 
-
   return (
     <>
       <section>
         <h2 className='absolute hidden'>Skills</h2>
-        <div className='flex justify-center my-32'>
+        <div className='flex justify-center my-20'>
           <div className='text-xl leading-9 max-w-lg p-4 md:p-0'>
             <p>
               {len
@@ -60,11 +60,11 @@ export default function Skills() {
             </p>
           </div>
         </div>
-        <div className='w-full my-32'>
-          <h2 className='mb-14 text-3xl text-center mb-26'>
+        <div className='w-full '>
+          <h2 className='text-3xl text-center mb-26'>
             {len ? 'Languages' : 'Skills'}
           </h2>
-          <div className='md:p-6 hover:cursor-pointer'>
+          <div className='py-20 hover:cursor-pointer'>
             <Swiper
               slidesPerView={tablet ? (cell ? 1.5 : 3) : 5}
               spaceBetween={20}
@@ -95,7 +95,6 @@ export default function Skills() {
     </>
   );
 }
-
 const skill = [
   {
     name: 'HTML 5',
@@ -110,12 +109,24 @@ const skill = [
     icon: TbBrandJavascript,
   },
   {
+    name: 'TypeScript',
+    icon: SiTypescript,
+  },
+  {
     name: 'React Js',
     icon: TbBrandReactNative,
   },
   {
     name: 'Next js',
     icon: TbBrandNextjs,
+  },
+  {
+    name: 'React Native',
+    icon: TbBrandReactNative,
+  },
+  {
+    name: 'Angular Js',
+    icon: FaAngular,
   },
   {
     name: 'Tailwind Css',

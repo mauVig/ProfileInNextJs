@@ -7,6 +7,11 @@ import st from '../styles/details.module.css';
 
 export default function ParallaxLoesen({ name }) {
   const [who, setWho] = useState();
+  const [altText, setAltText] = useState({
+    // dante: 'El es Dante Bronzini',
+    logipartes: 'Es el repositorio de logipartes.com.ar',
+    pink: 'Es el repositorio de lifeispink.org',
+  })
 
   const cell = useMediaQuery({
     query: '(max-width: 550px)',
@@ -20,9 +25,18 @@ export default function ParallaxLoesen({ name }) {
 
   useEffect(() => {
     if (name === 'logipartes') {
-      if (pc) setWho('/img/logipartes.jpg');
-      if (tablet) setWho('/img/logipartes-tablet.jpg');
-      if (cell) setWho('/img/logipartes-cel.jpg');
+      setAltText(altText['logipartes'])
+
+      if (pc) setWho('/img/logipartes.png');
+      if (tablet) setWho('/img/logipartes-tablet.png');
+      if (cell) setWho('/img/logipartes-cel.png');
+    }
+    if (name === 'pink') {
+      setAltText(altText['pink'])
+
+      if (pc) setWho('/img/pink-desk.png');
+      if (tablet) setWho('/img/pink-tablet.png');
+      if (cell) setWho('/img/pink-cel.png');
     }
   }, []);
   
@@ -30,15 +44,11 @@ export default function ParallaxLoesen({ name }) {
     <>
       <div className={`overflow-hidden ${st.diagonal}`}>
         <Parallax speed={-90}>
-          <picture className={`h-screen -z-10 `}>
+          <picture className={`-z-10 `}>
             <img
               src={who}
               width='100%'
-              alt={
-                name === 'dante'
-                  ? 'El es Dante Bronzini'
-                  : 'Es el repositorio de Fabricante.logipartes.com.ar'
-              }
+              alt={altText}
             />
           </picture>
         </Parallax>

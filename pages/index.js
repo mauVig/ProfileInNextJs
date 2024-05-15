@@ -1,30 +1,33 @@
-import Head from 'next/head';
 import { useState, useEffect } from 'react';
+import Head from 'next/head';
 
 import Header from '../components/header/Header';
 import NavBar from '../components/header/NavBar';
 import Skills from '../components/skills/Skills';
 import Loesen from '../components/comments/Loesen';
-import Dante from '../components/comments/Dante';
 import ParallaxAll from '../components/ParallaxAll';
 import Contact from '../components/contact/Contact';
 import Footer from '../components/footer/Footer';
 
 import st from '../styles/details.module.css';
+
 import { UseContextIdiom } from '../context/ContextIdiom';
+import Pink from '../components/comments/Pink';
 
 export default function Home() {
   const { stateIdiom } = UseContextIdiom();
   const [len, setLen] = useState(stateIdiom);
+
   useEffect(() => {
     setLen(stateIdiom);
   }, [stateIdiom]);
+
   return (
     <>
       <Head>
         <title>Mauro Vigliero</title>
       </Head>
-      <NavBar  />
+      <NavBar />
       <header
         className={`bg-black-500 w-full min-h-screen 
         z-40 relative ${st.headerBlock}`}
@@ -38,35 +41,29 @@ export default function Home() {
           <Skills />
         </div>
       </section>
-
-      {/* Testimonios */}
-      <section className='relative bg-black-500 z-30 pt-44 '>
-        <div className='max-w-7xl mx-auto text-gray-500  '>
-          <h2 className='mb-14 text-3xl text-center mb-26'>
+      
+      <section className='relative bg-black-500 z-30 pt-20 text-gray-500'>
+          <h2 className='pb-14 text-3xl text-center mb-26'>
             {len ? 'Experiencia' : 'Experience'}
           </h2>
-          <div className='max-w-7xl mx-auto text-gray-500  '>
-            <Loesen />
-          </div>
-        </div>
       </section>
+      <div className=' text-gray-500 bg-black-500'>
+        <Loesen />
+      </div>
       <section className='relative bg-black-500'>
         <div className='text-gray-500'>
           <ParallaxAll name='logipartes' />
         </div>
       </section>
 
-      {/* <section className='relative bg-black-500 z-30 pt-44 '>
-        <div className='max-w-7xl mx-auto text-gray-500 '>
-          <Dante len={lenguage} />
-        </div>
-      </section> */}
-      {/* <section className='relative bg-black-500'>
+      <div className=' text-gray-500 bg-black-500 pt-[8rem]'>
+        <Pink />
+      </div>
+      <section className='relative bg-black-500'>
         <div className='text-gray-500'>
-          <ParallaxAll name='dante' />
+          <ParallaxAll name='pink' />
         </div>
-      </section> */}
-      {/* Testimonios */}
+      </section>
 
       <section className='relative bg-black-500 z-30 overflow-hidden'>
         <Contact />

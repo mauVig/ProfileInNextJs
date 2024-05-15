@@ -3,24 +3,26 @@ import { UseContextIdiom } from '../../context/ContextIdiom';
 import LinkToPages from './LinksToPages';
 
 export default function Loesen() {
-  const { stateIdiom } = UseContextIdiom();  
   const [len, setLen] = useState(stateIdiom);
+  const { stateIdiom } = UseContextIdiom();
+
   useEffect(() => {
     setLen(stateIdiom);
   }, [stateIdiom]);
+
   return (
     <>
-      <article className='flex flex-col md:flex-row items-start gap-6 p-4 md:p-0'>
-         <a href='https://loesen.co/es' target='_blanck' className='block'>
-           <picture>
-             <img
-               src='/img/matiasKochlowski.jpg'
-               alt='Loesen'
-               className=' rounded-lg'
-               width={150}
-             />
-           </picture>
-         </a>
+      <article className='max-w-5xl mx-auto flex flex-col md:flex-row items-start gap-6 p-4 md:p-0'>
+        <a href='https://loesen.co/es' target='_blanck' className='block'>
+          <picture>
+            <img
+              src='/img/loesen.png'
+              alt='Logo de Loesen'
+              width={50}
+              className='rounded-full'
+            />
+          </picture>
+        </a>
         <div className='md:w-1/2'>
           <div className='flex items-center gap-3'>
             <a
@@ -28,16 +30,8 @@ export default function Loesen() {
               target='_blanck'
               className='flex items-center gap-3'
             >
-              <picture>
-                <img
-                  src='/img/loesen.png'
-                  alt='Matias Kochlowski'
-                  width={50}
-                  className='rounded-full'
-                />
-              </picture>
               <div>
-                <h2 className='text-2xl text-skin-500'>Loesen</h2>
+                <h2 className='text-3xl text-skin-500'>Loesen</h2>
                 <p className='text-black-200'>
                   {len
                     ? 'Soluciones digitales para la posventa automotriz'
@@ -47,11 +41,26 @@ export default function Loesen() {
             </a>
           </div>
           <div>
-            <p className='mt-6 text-lg italic tracking-wider'>
+            <p className='my-6 text-lg italic tracking-wider'>
               &quot;
-              {len
-                ? 'Ha sido un placer trabajar con Mauro. Aprende rápido y trabaja bien con los demás. En su paso por Loesen ha progresado favorablemente en sus conocimientos de diseño front-end, TailwindCSS y NextJS. Ha demostrado habilidades para resolver problemas y ha hecho valiosas sugerencias sobre cómo mejorar nuestras aplicaciones.'
-                : 'It has been a pleasure working with Mauro. Learn fast and works well with others. In this time at Loesen he has progressed favorably on his knowledge of front-end design, TailwindCSS and NextJS. He has demonstrated problem solving skills problems and has made valuable suggestions on how to improve our apps.'}
+                {len ? (
+                  <>
+                    Este fue mi primer trabajo en una
+                    &nbsp;<strong className='text-skin-500'>empresa</strong>&nbsp;
+                    como programador Frontend. Sólo pude trabajar tres meses,
+                    debido a la inestabilidad económica en Argentina. Utilicé
+                    tecnologías como TailwindCSS y NextJS, en varias páginas de la empresa.
+                  </>
+                ) : (
+                  <>
+                    This was my first job in a  
+                    &nbsp;<strong className='text-skin-500'>company</strong>&nbsp;
+                    as a Frontend programmer. I
+                    was only able to work for three months, due to the economic
+                    instability in Argentina. I used technologies such as
+                    TailwindCSS and NextJS, on several company pages.
+                  </>
+                )}
               &quot;
             </p>
           </div>

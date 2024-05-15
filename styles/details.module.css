@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@500&display=swap');
+
 .h1Trun{
-    text-overflow:ellipsis;
-    white-space:nowrap;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     margin-left: -2px;
+    font-family: "Rubik", sans-serif;
 }
+
 .blockSize{
     height:300px;
     width:100%;
@@ -55,31 +59,6 @@
         -o-transform:translateY(-4rem) ;
     }
 }
-.efectHeader{
-    transition: all;
-    animation: moveEfectHeader 4s ;
-    -webkit-animation: moveEfectHeader 4s ;
-}
-
-@keyframes moveEfectHeader {
-    40%{
-        transform:translateY(0) skewy(0) translateX(0);
-        -webkit-transform:translateY(0) skewy(0) translateX(0);
-        -moz-transform:translateY(0) skewy(0) translateX(0);
-        -ms-transform:translateY(0) skewy(0) translateX(0);
-        -o-transform:translateY(0) skewy(0) translateX(0);
-        opacity: 1;
-}
-    0%{
-        transform:translateY(0rem) skewX(-1deg) translateX(1rem);
-        -webkit-transform:translateY(0rem) skewX(-1deg) translateX(1rem);
-        -moz-transform:translateY(0rem) skewX(-1deg) translateX(1rem);
-        -ms-transform:translateY(0rem) skewX(-1deg) translateX(1rem);
-        -o-transform:translateY(0rem) skewX(-1deg) translateX(1rem);
-        opacity:0;
-}
-}
-
 
 .cvHover:hover span{
     letter-spacing:2px;
@@ -87,7 +66,7 @@
 
 .skillBefore::before{
     content: '';
-    position:absolute;
+    position: absolute;
     left: 0;
     right: 0;
     top: -50%;
@@ -95,15 +74,18 @@
     z-index: -20;
     background: #FCDDB8;   
 }
+
 .diagonal{
     padding: 1rem 0;
-    height: 500px;
-    transform-origin: top right;
+    /* height: 500px; */
+    transform-origin: right;
     transform:skewy(-3deg);
     -webkit-transform:skewy(-3deg);
     -moz-transform:skewy(-3deg);
     -ms-transform:skewy(-3deg);
     -o-transform:skewy(-3deg);
+    background-color: rgb(40 40 40);
+    
 }
 
 .area{

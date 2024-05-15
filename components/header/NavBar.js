@@ -4,19 +4,23 @@ import { UseContextIdiom } from '../../context/ContextIdiom';
 import { useEffect, useState } from 'react';
 
 export default function NavBar() {
+  const [len, setLen] = useState(stateIdiom);
   const { esp, eng, stateIdiom } = UseContextIdiom();
+
   const espaniol = () => {
     localStorage.setItem('midiom', 'es');
     esp();
   };
+
   const ingles = () => {
     localStorage.setItem('midiom', 'en');
     eng();
   };
-  const [len, setLen] = useState(stateIdiom);
+
   useEffect(() => {
     setLen(stateIdiom);
   }, [stateIdiom]);
+
   return (
     <>
       <div className='sticky top-0 bg-black-600 z-50 '>
