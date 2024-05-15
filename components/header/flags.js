@@ -177,7 +177,7 @@ export const Usa = (props) => (
         <path fillOpacity='.7' d='M0 0h682.7v512H0z' />
       </clipPath>
     </defs>
-    <g fillRule='evenodd' clipApth='url(#a)' transform='scale(.9375)'>
+    <g fillRule='evenodd' transform='scale(.9375)'>
       <g strokeWidth='1pt'>
         <path
           fill='#bd3d44'

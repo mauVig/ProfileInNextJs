@@ -13,7 +13,11 @@ export default function Accenture() {
   return (
     <>
       <article className='max-w-5xl mx-auto flex flex-col md:flex-row items-start gap-6 p-4 md:p-0'>
-        <a href='https://www.accenture.com/ar-es' target='_blanck' className='block'>
+        <a
+          href='https://www.accenture.com/ar-es'
+          target='_blanck'
+          className='block'
+        >
           <picture>
             <img src='/img/accenture-logo.png' alt='Logo de Pink' width={50} />
           </picture>
@@ -37,14 +41,29 @@ export default function Accenture() {
               {len ? (
                 <>
                   Estoy trabajando en esta &nbsp;
-                  <strong className='text-skin-500'>empresa</strong>&nbsp; 
-                   desde 2023, y actualmente continúo brindando mis servicios esta empresa. Puedo decir que en este tiempo aprendí cómo funciona una compañía de esta altura y también a trabajar en proyectos y en equipo. Estuve en dos proyectos, el primero trabajé con la tecnología React haciendo una aplicación para que los usuarios que la utilicen pueden hacer marketing a través de SharePoint. Y actualmente estoy trabajando con las tecnologías angular, typescript y ngrx haciendo una página para evaluar las oportunidades de negocios.
+                  <strong className='text-skin-500'>empresa</strong>&nbsp; desde
+                  2023, y actualmente continúo brindando mis servicios esta
+                  empresa. Puedo decir que en este tiempo aprendí cómo funciona
+                  una compañía de esta altura y también a trabajar en proyectos
+                  y en equipo. Estuve en dos proyectos, el primero trabajé con
+                  la tecnología React haciendo una aplicación para que los
+                  usuarios que la utilicen pueden hacer marketing a través de
+                  SharePoint. Y actualmente estoy trabajando con las tecnologías
+                  angular, typescript y ngrx haciendo una página para evaluar
+                  las oportunidades de negocios.
                 </>
               ) : (
                 <>
                   I have been working in this &nbsp;
-                  <strong className='text-skin-500'>company</strong>&nbsp;
-                  since 2023, and I currently continue to provide my services to this company. I can say that during this time I learned how a company of this size works and also how to work on projects and as a team. I was in two projects, the first I worked with React technology making an application so that the users who use it can do marketing through SharePoint. And I am currently working with angular, typescript and ngrx technologies making a page to evaluate business opportunities.
+                  <strong className='text-skin-500'>company</strong>&nbsp; since
+                  2023, and I currently continue to provide my services to this
+                  company. I can say that during this time I learned how a
+                  company of this size works and also how to work on projects
+                  and as a team. I was in two projects, the first I worked with
+                  React technology making an application so that the users who
+                  use it can do marketing through SharePoint. And I am currently
+                  working with angular, typescript and ngrx technologies making
+                  a page to evaluate business opportunities.
                 </>
               )}
               &quot;

@@ -12,7 +12,7 @@ export default function ParallaxLoesen({ name }) {
     pink: 'Es el repositorio de lifeispink.org',
     recetas: 'Es el repositorio del bootcamp recetas',
     accenture: 'Es el repositorio del bootcamp de Accenture',
-  })
+  });
 
   const cell = useMediaQuery({
     query: '(max-width: 550px)',
@@ -25,24 +25,19 @@ export default function ParallaxLoesen({ name }) {
   });
 
   useEffect(() => {
-    setAltText(altText[name])
+    setAltText(altText[name]);
 
     if (pc) setWho(`/img/${name}-desk.png`);
     if (tablet) setWho(`/img/${name}-tablet.png`);
     if (cell) setWho(`/img/${name}-cel.png`);
-
   }, []);
-  
+
   return (
     <>
       <div className={`overflow-hidden ${st.diagonal}`}>
         <Parallax speed={-90}>
           <picture className={`-z-10 `}>
-            <img
-              src={who}
-              width='100%'
-              alt={altText}
-            />
+            <img src={who} width='100%' alt={altText} />
           </picture>
         </Parallax>
       </div>

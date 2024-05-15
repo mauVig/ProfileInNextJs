@@ -21,7 +21,6 @@ export default function Contact() {
             className='w-full h-full object-cover'
             src='/img/space.jpg'
             alt='Imagen del espcio, representando que podemos trabajar a distancia'
-            layout='fill'
           />
         </picture>
         <div className='relative max-w-7xl mx-auto px-4 py-12 lg:px-8 lg:py-16 h-full flex items-center'>

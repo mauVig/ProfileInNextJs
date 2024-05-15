@@ -13,21 +13,18 @@ import { useEffect, useState } from 'react';
 export default function Header() {
   const { stateIdiom } = UseContextIdiom();
   const [len, setLen] = useState(stateIdiom);
-  
+
   useEffect(() => {
     setLen(stateIdiom);
   }, [stateIdiom]);
 
   return (
     <>
-      <div
-        className='min-h-screen pb-6 grid grid-cols-1 md:grid-cols-2 text-gray-500'
-      >
+      <div className='min-h-screen pb-6 grid grid-cols-1 md:grid-cols-2 text-gray-500'>
         <picture className='flex md:justify-start justify-center items-center '>
           <img
             src='/img/full-stack-mauro-vigliero.png'
             alt='Mauro'
-            layout='fill'
           />
         </picture>
         <div className='flex justify-center items-center py-40 md:py-0 '>
@@ -71,7 +68,7 @@ export default function Header() {
               target='_blanck'
             >
               <div className='flex items-center gap-2'>
-                <TbCloudDownload className='text-lg'/>
+                <TbCloudDownload className='text-lg' />
                 <span className=' font-medium text-md'>
                   {len ? 'Descargar' : 'Download'} CV
                 </span>
@@ -92,8 +89,8 @@ const net = [
     href: 'https://www.instagram.com/maurook789/',
     icon: TbBrandInstagram,
   },
-  {  
-    href: 'https://github.com/mauVig', 
-    icon: TbBrandGithub 
+  {
+    href: 'https://github.com/mauVig',
+    icon: TbBrandGithub,
   },
 ];
