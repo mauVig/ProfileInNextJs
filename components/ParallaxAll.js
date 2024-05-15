@@ -8,9 +8,10 @@ import st from '../styles/details.module.css';
 export default function ParallaxLoesen({ name }) {
   const [who, setWho] = useState();
   const [altText, setAltText] = useState({
-    // dante: 'El es Dante Bronzini',
     logipartes: 'Es el repositorio de logipartes.com.ar',
     pink: 'Es el repositorio de lifeispink.org',
+    recetas: 'Es el repositorio del bootcamp recetas',
+    accenture: 'Es el repositorio del bootcamp de Accenture',
   })
 
   const cell = useMediaQuery({
@@ -24,20 +25,12 @@ export default function ParallaxLoesen({ name }) {
   });
 
   useEffect(() => {
-    if (name === 'logipartes') {
-      setAltText(altText['logipartes'])
+    setAltText(altText[name])
 
-      if (pc) setWho('/img/logipartes.png');
-      if (tablet) setWho('/img/logipartes-tablet.png');
-      if (cell) setWho('/img/logipartes-cel.png');
-    }
-    if (name === 'pink') {
-      setAltText(altText['pink'])
+    if (pc) setWho(`/img/${name}-desk.png`);
+    if (tablet) setWho(`/img/${name}-tablet.png`);
+    if (cell) setWho(`/img/${name}-cel.png`);
 
-      if (pc) setWho('/img/pink-desk.png');
-      if (tablet) setWho('/img/pink-tablet.png');
-      if (cell) setWho('/img/pink-cel.png');
-    }
   }, []);
   
   return (

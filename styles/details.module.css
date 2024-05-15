@@ -38,8 +38,8 @@
 
 .headerBlock{
     transition: all;
-    animation: moveHeaderBlock 12s;
-    -webkit-animation: moveHeaderBlock 12s;
+    animation: moveHeaderBlock 3s;
+    -webkit-animation: moveHeaderBlock 3s;
 }
 
 @keyframes moveHeaderBlock {
@@ -57,7 +57,7 @@
         -moz-transform:translateY(-4rem) ;
         -ms-transform:translateY(-4rem) ;
         -o-transform:translateY(-4rem) ;
-    }
+}
 }
 
 .cvHover:hover span{

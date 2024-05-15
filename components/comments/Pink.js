@@ -15,7 +15,7 @@ export default function Pink() {
       <article className='max-w-5xl mx-auto flex flex-col md:flex-row items-start gap-6 p-4 md:p-0'>
         <a href='https://lifeispink.org/' target='_blanck' className='block'>
           <picture>
-            <img src='/img/pink.png' alt='Logo de Loesen' width={50} />
+            <img src='/img/pink.png' alt='Logo de Pink' width={50} />
           </picture>
         </a>
         <div className='md:w-1/2'>
@@ -39,7 +39,7 @@ export default function Pink() {
                   Esta es una página &nbsp;
                   <strong className='text-skin-500'>freelance</strong>&nbsp; que
                   construir para una agencia de diseño. Para desarrollar esta
-                  web, mi cliente me dio el el diseño completo tanto como para
+                  web, mi cliente me dio el diseño completo tanto como para
                   Mobile o desk, y yo decidí hacer este proyecto con html css y
                   javascript, agregando solamente una librería llamada Swiper
                   para hacer un slide.

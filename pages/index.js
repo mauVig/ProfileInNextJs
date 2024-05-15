@@ -13,6 +13,9 @@ import st from '../styles/details.module.css';
 
 import { UseContextIdiom } from '../context/ContextIdiom';
 import Pink from '../components/comments/Pink';
+import Recetas from '../components/comments/Recetas';
+import Accenture from '../components/comments/Accenture';
+
 
 export default function Home() {
   const { stateIdiom } = UseContextIdiom();
@@ -62,6 +65,24 @@ export default function Home() {
       <section className='relative bg-black-500'>
         <div className='text-gray-500'>
           <ParallaxAll name='pink' />
+        </div>
+      </section>
+      
+      <div className=' text-gray-500 bg-black-500 pt-[8rem]'>
+        <Accenture />
+      </div>
+      <section className='relative bg-black-500'>
+        <div className='text-gray-500'>
+          <ParallaxAll name='accenture' />
+        </div>
+      </section>
+
+      <div className=' text-gray-500 bg-black-500 pt-[8rem]'>
+        <Recetas />
+      </div>
+      <section className='relative bg-black-500'>
+        <div className='text-gray-500'>
+          <ParallaxAll name='recetas' />
         </div>
       </section>
 

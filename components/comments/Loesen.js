@@ -43,24 +43,24 @@ export default function Loesen() {
           <div>
             <p className='my-6 text-lg italic tracking-wider'>
               &quot;
-                {len ? (
-                  <>
-                    Este fue mi primer trabajo en una
-                    &nbsp;<strong className='text-skin-500'>empresa</strong>&nbsp;
-                    como programador Frontend. Sólo pude trabajar tres meses,
-                    debido a la inestabilidad económica en Argentina. Utilicé
-                    tecnologías como TailwindCSS y NextJS, en varias páginas de la empresa.
-                  </>
-                ) : (
-                  <>
-                    This was my first job in a  
-                    &nbsp;<strong className='text-skin-500'>company</strong>&nbsp;
-                    as a Frontend programmer. I
-                    was only able to work for three months, due to the economic
-                    instability in Argentina. I used technologies such as
-                    TailwindCSS and NextJS, on several company pages.
-                  </>
-                )}
+              {len ? (
+                <>
+                  Este fue mi primer trabajo en una &nbsp;
+                  <strong className='text-skin-500'>empresa</strong>&nbsp; como
+                  programador Frontend. Sólo pude trabajar tres meses, debido a
+                  la inestabilidad económica en Argentina. Utilicé tecnologías
+                  como TailwindCSS y NextJS, en varias páginas de la empresa.
+                </>
+              ) : (
+                <>
+                  This was my first job in a &nbsp;
+                  <strong className='text-skin-500'>company</strong>&nbsp; as a
+                  Frontend programmer. I was only able to work for three months,
+                  due to the economic instability in Argentina. I used
+                  technologies such as TailwindCSS and NextJS, on several
+                  company pages.
+                </>
+              )}
               &quot;
             </p>
           </div>
