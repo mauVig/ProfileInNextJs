@@ -62,7 +62,7 @@ export default function Skills() {
         </div>
         <div className='w-full '>
           <h2 className='text-3xl text-center mb-26'>
-            {len ? 'Languages' : 'Skills'}
+            {len ? 'Lenguajes' : 'Skills'}
           </h2>
           <div className='py-20 hover:cursor-pointer'>
             <Swiper
