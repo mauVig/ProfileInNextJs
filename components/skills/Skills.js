@@ -51,11 +51,7 @@ export default function Skills() {
           <div className='text-xl leading-9 max-w-lg p-4 md:p-0'>
             <p>
               {len
-                ? 'Me encanta programar en cualquier lenguaje.'
-                : 'I love programming in any language.'}
-              <br />
-              {len
-                ? 'Pero no solo es hacer, sino que también es aprender, estudiar, practicar, desafiarse a uno mismo. Disfruto del tiempo programando algún lenguaje, framework o librería.'
+                ? 'Me encanta programar en cualquier lenguaje. Pero no solo es hacer, sino que también es aprender, estudiar, practicar, desafiarse a uno mismo. Disfruto del tiempo programando algún lenguaje, framework o librería.'
                 : "I love programming in any language. But it's not only doing, it's also learning, studying, practising, challenging yourself. I always enjoy it when I'm programming, whether it is language, framework or library."}
             </p>
           </div>
