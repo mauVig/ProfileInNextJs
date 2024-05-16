@@ -8,14 +8,12 @@ import Loesen from '../components/comments/Loesen';
 import ParallaxAll from '../components/ParallaxAll';
 import Contact from '../components/contact/Contact';
 import Footer from '../components/footer/Footer';
-
-import st from '../styles/details.module.css';
-
-import { UseContextIdiom } from '../context/ContextIdiom';
 import Pink from '../components/comments/Pink';
 import Recetas from '../components/comments/Recetas';
 import Accenture from '../components/comments/Accenture';
+import st from '../styles/details.module.css';
 
+import { UseContextIdiom } from '../context/ContextIdiom';
 
 export default function Home() {
   const { stateIdiom } = UseContextIdiom();

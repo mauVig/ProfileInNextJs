@@ -46,7 +46,7 @@ export default function Skills() {
   return (
     <>
       <section>
-        <h2 className='absolute hidden'>Skills</h2>
+        <h2 className='absolute invisible'>Skills</h2>
         <div className='flex justify-center my-20'>
           <div className='text-xl leading-9 max-w-lg p-4 md:p-0'>
             <p>
@@ -56,7 +56,7 @@ export default function Skills() {
               <br />
               {len
                 ? 'Pero no solo es hacer, sino que también es aprender, estudiar, practicar, desafiarse a uno mismo. Disfruto del tiempo programando algún lenguaje, framework o librería.'
-                : 'But it´s not only do, also is learning, studying, practicing, challenge yourself. I enjoy the time when I´m programming some language, framework or library.'}
+                : "I love programming in any language. But it's not only doing, it's also learning, studying, practising, challenging yourself. I always enjoy it when I'm programming, whether it is language, framework or library."}
             </p>
           </div>
         </div>

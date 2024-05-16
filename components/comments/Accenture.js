@@ -46,10 +46,18 @@ export default function Accenture() {
                   empresa. Puedo decir que en este tiempo aprendí cómo funciona
                   una compañía de esta altura y también a trabajar en proyectos
                   y en equipo. Estuve en dos proyectos, el primero trabajé con
-                  la tecnología React haciendo una aplicación para que los
+                  la tecnología
+                    
+                  &nbsp;<span className='text-skin-600 font-semibold'>React</span>&nbsp;
+
+                   haciendo una aplicación para que los
                   usuarios que la utilicen pueden hacer marketing a través de
-                  SharePoint. Y actualmente estoy trabajando con las tecnologías
-                  angular, typescript y ngrx haciendo una página para evaluar
+                  &nbsp;<span className='text-skin-600 font-semibold'>SharePoint</span>.
+                   Y actualmente estoy trabajando con las tecnologías
+                   &nbsp;<span className='text-skin-600 font-semibold'>angular</span>,
+                   &nbsp;<span className='text-skin-600 font-semibold'>typescript</span>&nbsp;y
+                   &nbsp;<span className='text-skin-600 font-semibold'>ngrx</span>&nbsp;
+                   haciendo una página para evaluar
                   las oportunidades de negocios.
                 </>
               ) : (

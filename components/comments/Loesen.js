@@ -47,17 +47,23 @@ export default function Loesen() {
                 <>
                   Este fue mi primer trabajo en una &nbsp;
                   <strong className='text-skin-500'>empresa</strong>&nbsp; como
-                  programador Frontend. Sólo pude trabajar tres meses, debido a
-                  la inestabilidad económica en Argentina. Utilicé tecnologías
-                  como TailwindCSS y NextJS, en varias páginas de la empresa.
+                  programador Frontend. Utilicé tecnologías
+                  como
+                  &nbsp;<span className='text-skin-600 font-semibold'>TailwindCSS</span>&nbsp;        
+                   y 
+                  &nbsp;<span className='text-skin-600 font-semibold'>NextJS</span>&nbsp;
+                   , en varias páginas de la empresa.
                 </>
               ) : (
                 <>
                   This was my first job in a &nbsp;
                   <strong className='text-skin-500'>company</strong>&nbsp; as a
-                  Frontend programmer. I was only able to work for three months,
-                  due to the economic instability in Argentina. I used
-                  technologies such as TailwindCSS and NextJS, on several
+                  Frontend programmer. I used
+                  technologies such as 
+                  &nbsp;<span className='text-skin-600 font-semibold'>TailwindCSS</span>&nbsp;        
+                   and 
+                  &nbsp;<span className='text-skin-600 font-semibold'>NextJS</span>&nbsp;
+                  , on several
                   company pages.
                 </>
               )}
