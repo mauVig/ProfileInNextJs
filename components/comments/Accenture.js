@@ -40,9 +40,8 @@ export default function Accenture() {
               &quot;
               {len ? (
                 <>
-                  Estoy trabajando en esta &nbsp;
-                  <strong className='text-skin-500'>empresa</strong>&nbsp; desde
-                  2023 hasta la actualidad. Puedo decir que en este tiempo aprendí cómo funciona
+                  Estoy trabajando en esta &nbsp;<strong className='text-skin-500'>empresa</strong>&nbsp; desde&nbsp;
+                  <strong className='text-skin-700'>2022 hasta la actualidad</strong>. Puedo decir que en este tiempo aprendí cómo funciona
                   una compañía de este nivel y también a trabajar en proyectos
                   y en equipo. Estuve en dos proyectos, el primero trabajé con
                   la tecnología
