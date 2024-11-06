@@ -41,30 +41,30 @@ export default function Loesen() {
             </a>
           </div>
           <div>
-            <p className='my-6 text-lg italic tracking-wider'>
+            <p className='my-8 leading-9 text-lg italic tracking-wider'>
               &quot;
               {len ? (
                 <>
-                  Este fue mi primer trabajo en una &nbsp;
-                  <strong className='text-skin-500'>empresa</strong>&nbsp; como
-                  programador Frontend. Utilicé tecnologías
-                  como
-                  &nbsp;<span className='text-skin-600 font-semibold'>TailwindCSS</span>&nbsp;        
-                   y 
-                  &nbsp;<span className='text-skin-600 font-semibold'>NextJS</span>&nbsp;
-                   , en varias páginas de la empresa.
+                  Este fue mi primer trabajo en una empresa como programador
+                  Front-end. Utilicé tecnologías como
+                  <span className='text-skin-600 font-semibold'>
+                    {' '}
+                    TailwindCSS{' '}
+                  </span>{' '}
+                  y <span className='text-skin-600 font-semibold'>NextJS</span>,
+                  en varias páginas de la empresa.
                 </>
               ) : (
                 <>
-                  This was my first job in a &nbsp;
-                  <strong className='text-skin-500'>company</strong>&nbsp; as a
-                  Frontend programmer. I used
-                  technologies such as 
-                  &nbsp;<span className='text-skin-600 font-semibold'>TailwindCSS</span>&nbsp;        
-                   and 
-                  &nbsp;<span className='text-skin-600 font-semibold'>NextJS</span>&nbsp;
-                  , on several
-                  company pages.
+                  This was my first job in a company as a Front-end programmer.
+                  I used technologies such as
+                  <span className='text-skin-600 font-semibold'>
+                    {' '}
+                    TailwindCSS{' '}
+                  </span>
+                  and{' '}
+                  <span className='text-skin-600 font-semibold'>NextJS</span>,
+                  on some company pages.
                 </>
               )}
               &quot;

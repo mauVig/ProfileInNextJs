@@ -32,33 +32,82 @@ export default function Pink() {
             </a>
           </div>
           <div>
-            <p className='my-6 text-lg italic tracking-wider'>
+            <p className='my-10 leading-9 text-lg italic tracking-wider'>
               &quot;
               {len ? (
                 <>
-                  Esta es una página &nbsp;
-                  <strong className='text-skin-500'>freelance</strong>&nbsp; que
-                  construir para una agencia de diseño. Para desarrollar esta
-                  web, mi cliente me dio el diseño completo tanto como para
-                  Mobile o desk, y yo decidí hacer este proyecto con 
-                  &nbsp;<span className='text-skin-600 font-semibold'>HTML CSS</span>&nbsp;
-                   y
-                  &nbsp;<span className='text-skin-600 font-semibold'>javascript</span>&nbsp;
-                  , agregando  una librería llamada Swiper
-                  para hacer un slide y tambien use ScrollReveal.
+                  Esta es una página
+                  <strong className='text-skin-600'> Freelance </strong> que
+                  construir para una agencia de diseño. Mi cliente me facilitó
+                  el diseño completo, tanto como para Mobile y desktop. En este
+                  proyecto utilizo
+                  <span className='text-skin-600 font-semibold'> HTML </span>,
+                  <span className='text-skin-600 font-semibold'> CSS </span>y
+                  <span className='text-skin-600 font-semibold'>
+                    {' '}
+                    javascript
+                  </span>
+                  . Agregando tambien, una librería llamada
+                  <a
+                    href='https://swiperjs.com/'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    <span className='text-skin-600 font-semibold'>
+                      {' '}
+                      Swiper{' '}
+                    </span>
+                  </a>
+                  para hacer un slide y tambien use
+                  <a
+                    href='https://scrollrevealjs.org/'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    <span className='text-skin-600 font-semibold'>
+                      {' '}
+                      ScrollReveal
+                    </span>
+                  </a>
+                  .
                 </>
               ) : (
                 <>
-                  This is a &nbsp;
-                  <strong className='text-skin-500'>freelance</strong>&nbsp;
+                  This is a
+                  <strong className='text-skin-500'> freelance </strong>
                   page to build for a design agency. To develop this website, my
                   client gave me the complete design for both Mobile and
-                  desktop, and I decided to do this project with 
-                  &nbsp;<span className='text-skin-600 font-semibold'>HTML CSS</span>&nbsp;
-                   and
-                  &nbsp;<span className='text-skin-600 font-semibold'>javascript</span>&nbsp;
-                  , adding a library called Swiper to make a
-                  slide and also use ScrollReveal.
+                  desktop, and I decided to do this project with
+                  <span className='text-skin-600 font-semibold'> HTML</span>,
+                  <span className='text-skin-600 font-semibold'> CSS </span>
+                  and
+                  <span className='text-skin-600 font-semibold'>
+                    {' '}
+                    javascript
+                  </span>
+                  , adding a library called
+                  <a
+                    href='https://swiperjs.com/'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    <span className='text-skin-600 font-semibold'>
+                      {' '}
+                      Swiper{' '}
+                    </span>
+                  </a>
+                  to make a slide and also use
+                  <a
+                    href='https://scrollrevealjs.org/'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    <span className='text-skin-600 font-semibold'>
+                      {' '}
+                      ScrollReveal
+                    </span>
+                  </a>
+                  .
                 </>
               )}
               &quot;

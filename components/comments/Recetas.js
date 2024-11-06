@@ -36,31 +36,19 @@ export default function Recetas() {
             </a>
           </div>
           <div>
-            <p className='my-6 text-lg italic tracking-wider'>
+            <p className='my-10 leading-9 text-lg italic tracking-wider'>
               &quot;
               {len ? (
                 <>
-                  Esta es una página hice en un &nbsp;
-                  <strong className='text-skin-500'>bootcamp</strong>&nbsp;
-                  dentro de la empresa Accenture, creando el frontend de una app
-                  dinámica. utilicé tecnologías como React y Tailwind. Pero al
-                  aprender typescript, tengo ganas de migrar toda la app a esta
-                  tecnología. cuando realicé este curso y hice la presentación
-                  final le pude demostrar a la empresa habilidades, por eso hoy
-                  en día estoy en un proyecto grande de Accenture en el cual
-                  trabajan aproximadamente 80 personas.
+                  Esta es una página hice en un{' '}
+                  <strong className='text-skin-500'>bootcamp{' '}</strong>
+                  dentro de la empresa <strong className='text-skin-500'> Accenture</strong>, desarrollando el front-end de una app dinámica. Utilicé tecnologías como React y Tailwind. Y asi pude demostrar a la empresa mis habilidades.
                 </>
               ) : (
                 <>
-                  This is a page I made in a&nbsp;
-                  <strong className='text-skin-500'>bootcamp</strong>&nbsp;
-                  bootcamp within the company Accenture, creating the frontend
-                  of a dynamic app. I used technologies like React and Tailwind.
-                  But when learning typescript, I want to migrate the entire app
-                  to this technology. When I took this course and gave the final
-                  presentation I was able to demonstrate my skills to the
-                  company, which is why today I am in a large Accenture project
-                  in which approximately 80 people work.
+                  This is a page I made in a{' '}
+                  <strong className='text-skin-500'>bootcamp{' '}</strong>
+                  within Accenture, developing the front-end of a dynamic application. It uses technologies like React and Tailwind. And so I was able to show the company my skills.
                 </>
               )}
               &quot;

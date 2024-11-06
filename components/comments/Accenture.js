@@ -36,33 +36,37 @@ export default function Accenture() {
             </a>
           </div>
           <div>
-            <p className='my-6 text-lg italic tracking-wider'>
+            <p className='my-8 text-lg italic leading-9 tracking-wider'>
               &quot;
               {len ? (
                 <>
-                  Estoy trabajando en esta &nbsp;<strong className='text-skin-500'>empresa</strong>&nbsp; desde&nbsp;
-                  <strong className='text-skin-700'>2022 hasta la actualidad</strong>. Puedo decir que en este tiempo aprendí cómo funciona
-                  una compañía de este nivel y también a trabajar en proyectos
-                  y en equipo. Estuve en dos proyectos, el primero trabajé con
-                  la tecnología
-                    
-                  &nbsp;<span className='text-skin-600 font-semibold'>React</span>&nbsp;
-
-                   haciendo una aplicación para que los
-                  usuarios que la utilicen pueden hacer marketing a través de
-                  &nbsp;<span className='text-skin-600 font-semibold'>SharePoint</span>.
-                   Y actualmente estoy trabajando con las tecnologías
-                   &nbsp;<span className='text-skin-600 font-semibold'>angular</span>,
-                   &nbsp;<span className='text-skin-600 font-semibold'>typescript</span>&nbsp;y
-                   &nbsp;<span className='text-skin-600 font-semibold'>ngrx</span>&nbsp;
-                   haciendo una página para evaluar
-                  las oportunidades de negocios.
+                  Estoy trabajando en esta empresa
+                  <strong className='text-skin-600'>
+                    {' '}
+                    desde 2022 hasta la actualidad
+                  </strong>
+                  . Puedo decir que en este tiempo aprendí a trabajar en
+                  proyectos con equipo increibles. Estuve en dos proyectos, el
+                  primero trabajé con la tecnología
+                  <span className='text-skin-600 font-semibold'> React </span>
+                  haciendo una aplicación para hacer marketing a través de
+                  <span className='text-skin-600 font-semibold'>
+                  {' '}SharePoints
+                  </span>
+                  . Actualmente estoy trabajando con las tecnologías
+                  <span className='text-skin-600 font-semibold'>{' '}Angular</span>,
+                  <span className='text-skin-600 font-semibold'>{' '}
+                    typescript
+                  </span>{' '}
+                  y{' '}<span className='text-skin-600 font-semibold'>ngrx</span>{' '}
+                  haciendo una página para evaluar oportunidades de
+                  negocios.
                 </>
               ) : (
                 <>
-                  I have been working in this &nbsp;
-                  <strong className='text-skin-500'>company</strong>&nbsp; since
-                  2023, and I currently continue to provide my services to this
+                  I have been working in this
+                  <strong className='text-skin-500'>company</strong> since 2023,
+                  and I currently continue to provide my services to this
                   company. I can say that during this time I learned how a
                   company of this size works and also how to work on projects
                   and as a team. I was in two projects, the first I worked with

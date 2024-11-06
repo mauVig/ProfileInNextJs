@@ -24,7 +24,7 @@ export default function Header() {
         <picture className='flex md:justify-start justify-center items-center '>
           <img
             src='/img/full-stack-mauro-vigliero.png'
-            alt='Mauro'
+            alt='Mi nombre es Mauro Vigliero'
           />
         </picture>
         <div className='flex justify-center items-center py-40 md:py-0 '>
