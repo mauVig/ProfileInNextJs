@@ -22,6 +22,7 @@ module.exports = {
         500:'#E3E3E3',
         600:'#cbcbcb'
       },
+      gray2: colors.gray,
       skin:{
         200:'#f9f6f2',
         300:'#faeedf',

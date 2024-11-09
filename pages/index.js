@@ -44,7 +44,7 @@ export default function Home() {
       </section>
       
       <section className='relative bg-black-500 z-30 pt-20 text-gray-500'>
-          <h2 className='pb-14 text-3xl text-center mb-26'>
+          <h2 className='pb-14 text-4xl text-center mb-26'>
             {len ? 'Experiencia' : 'Experience'}
           </h2>
       </section>

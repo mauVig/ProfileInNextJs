@@ -1,11 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@500&display=swap');
 
 .h1Trun{
-    text-overflow: ellipsis;
+    /* text-overflow: ellipsis; */
     white-space: nowrap;
     margin-left: -2px;
     font-family: "Rubik", sans-serif;
+    position: relative;
 }
+/* .h1Trun::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 114%;
+    z-index: 1;
+    background: #FCDDB8;
+    animation: h1EffectBackG 6s infinite;
+    -webkit-animation: h1EffectBackG 6s infinite;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+@keyframes h1EffectBackG {
+    0%, 12%, 95%, 100%{ 
+        opacity: 0;
+    }
+    20%, 95%{
+        opacity: 1;
+    }
+}
+@keyframes h1EffectBlack {
+    0%,20%, 100%{
+        opacity: 0;
+        
+    }
+    45%, 95%{
+        opacity: 1;
+    }
+
+}
+.h1Trun::after{
+    content: 'Mauro Vigliero';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    animation: h1EffectBlack 6s infinite;
+    -webkit-animation: h1EffectBlack 6s infinite;
+    color: rgb(46, 46, 46);
+     font-family: 'Times New Roman', Times, serif; 
+}
+    */
 
 .blockSize{
     height:300px;
@@ -38,8 +88,8 @@
 
 .headerBlock{
     transition: all;
-    animation: moveHeaderBlock 3s;
-    -webkit-animation: moveHeaderBlock 3s;
+    animation: moveHeaderBlock 5s;
+    -webkit-animation: moveHeaderBlock 5s;
 }
 
 @keyframes moveHeaderBlock {
@@ -52,11 +102,11 @@
        
     }
     0%{
-        transform:translateY(-4rem) ;
-        -webkit-transform:translateY(-4rem) ;
-        -moz-transform:translateY(-4rem) ;
-        -ms-transform:translateY(-4rem) ;
-        -o-transform:translateY(-4rem) ;
+        transform:translateY(-1rem) ;
+        -webkit-transform:translateY(-1rem) ;
+        -moz-transform:translateY(-1rem) ;
+        -ms-transform:translateY(-1rem) ;
+        -o-transform:translateY(-1rem) ;
 }
 }
 

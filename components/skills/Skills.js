@@ -47,17 +47,9 @@ export default function Skills() {
     <>
       <section>
         <h2 className='absolute invisible'>Skills</h2>
-        <div className='flex justify-center my-20'>
-          <div className='text-xl leading-9 max-w-lg p-4 md:p-0'>
-            <p>
-              {len
-                ? 'Me encanta programar en cualquier lenguaje. Pero no solo es hacer, sino que también es aprender, estudiar, practicar, desafiarse a uno mismo. Disfruto del tiempo programando algún lenguaje, framework o librería.'
-                : "I love programming in any language. But it's not only doing, it's also learning, studying, practising, challenging yourself. I always enjoy it when I'm programming, whether it is language, framework or library."}
-            </p>
-          </div>
-        </div>
-        <div className='w-full '>
-          <h2 className='text-3xl text-center mb-26'>
+        
+        <div className='w-full my-20'>
+          <h2 className='text-4xl text-center mb-26'>
             {len ? 'Lenguajes' : 'Skills'}
           </h2>
           <div className='py-20 hover:cursor-pointer'>
@@ -65,6 +57,7 @@ export default function Skills() {
               slidesPerView={tablet ? (cell ? 1.5 : 3) : 5}
               spaceBetween={20}
               freeMode={true}
+              effect={'cards'}
               pagination={{
                 clickable: true,
               }}
@@ -79,12 +72,21 @@ export default function Skills() {
               {skill.map((sk) => (
                 <SwiperSlide
                   key={sk.name}
-                  className=' border border-black-500 rounded-lg flex justify-center items-center mb-6 bg-white '
+                  className=' border border-black-500 rounded-lg flex justify-center items-center mb-6 bg-white'
                 >
                   <Card {...sk} />
                 </SwiperSlide>
               ))}
             </Swiper>
+          </div>
+        </div>
+        <div className='flex justify-center my-20'>
+          <div className='text-xl leading-9 max-w-lg p-4 md:p-0'>
+            <p>
+              {len
+                ? 'Me encanta programar en cualquier lenguaje. Pero no solo es hacer, sino que también es aprender, estudiar, practicar, desafiarse a uno mismo. Disfruto del tiempo programando algún lenguaje, framework o librería.'
+                : "I love programming in any language. But it's not only doing, it's also learning, studying, practising, challenging yourself. I always enjoy it when I'm programming, whether it is language, framework or library."}
+            </p>
           </div>
         </div>
       </section>

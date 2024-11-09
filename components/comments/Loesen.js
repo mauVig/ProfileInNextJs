@@ -41,7 +41,7 @@ export default function Loesen() {
             </a>
           </div>
           <div>
-            <p className='my-8 leading-9 text-lg italic tracking-wider'>
+            <p className='my-10 leading-9 text-lg italic tracking-wider'>
               &quot;
               {len ? (
                 <>

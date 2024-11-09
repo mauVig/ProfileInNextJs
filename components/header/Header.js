@@ -29,9 +29,9 @@ export default function Header() {
         </picture>
         <div className='flex justify-center items-center py-40 md:py-0 '>
           <div>
-            <h1 className={`text-5xl lg:text-6xl mb-10 mt-3 ${st.h1Trun}`}>
-              <span className='text-skin-700'>M</span>auro{' '}
-              <span className='text-skin-700'>V</span>igliero
+            <h1 className={`text-5xl lg:text-6xl mb-10 mt-3 ${st.h1Trun}`}>M
+              <span className='text-skin-700'>auro </span>
+              V<span className='text-skin-700'>igliero</span>
             </h1>
             <p className='text-xl lg:text-2xl mb-6'>
               {len ? `Soy desarrollador` : `I am developer`}
