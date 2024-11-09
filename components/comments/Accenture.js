@@ -45,7 +45,7 @@ export default function Accenture() {
                   {' '}empresa{' '}
                   </strong>
                   desde 2022 hasta 2024. Puedo decir que en este tiempo aprendí a trabajar en
-                  proyectos con equipos y prsonas increibles. Estuve en dos proyectos, el
+                  proyectos con equipos y personas increibles. Estuve en dos proyectos, el
                   primero trabajé con la tecnología
                   <span className='text-skin-600 font-semibold'> React </span>
                   haciendo una aplicación para hacer marketing a través de
