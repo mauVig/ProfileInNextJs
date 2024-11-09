@@ -49,10 +49,10 @@ export default function Skills() {
         <h2 className='absolute invisible'>Skills</h2>
         
         <div className='w-full my-20'>
-          <h2 className='text-4xl text-center mb-26'>
+          <h2 className='text-4xl text-center '>
             {len ? 'Lenguajes' : 'Skills'}
           </h2>
-          <div className='py-20 hover:cursor-pointer'>
+          <div className='pt-20 hover:cursor-pointer'>
             <Swiper
               slidesPerView={tablet ? (cell ? 1.5 : 3) : 5}
               spaceBetween={20}

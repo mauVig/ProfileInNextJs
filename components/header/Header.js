@@ -86,10 +86,6 @@ const net = [
     href: 'https://www.linkedin.com/in/maurovigliero/',
     icon: TbBrandLinkedin,
   },
-  // {
-  //   href: 'https://www.instagram.com/maurook789/',
-  //   icon: TbBrandInstagram,
-  // },
   {
     href: 'https://github.com/mauVig',
     icon: TbBrandGithub,

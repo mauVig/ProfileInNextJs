@@ -12,11 +12,6 @@ const navigation = [
     href: 'https://www.linkedin.com/in/maurovigliero/',
     icon: TbBrandLinkedin,
   },
-  // {
-  //   name: 'Instagram',
-  //   href: 'https://www.instagram.com/maurook789/',
-  //   icon: TbBrandInstagram,
-  // },
   {
     name: 'Github',
     href: 'https://github.com/mauVig',
