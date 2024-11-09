@@ -4,8 +4,8 @@ import { UseContextIdiom } from '../../context/ContextIdiom';
 import { useEffect, useState } from 'react';
 
 export default function NavBar() {
-  const [len, setLen] = useState(stateIdiom);
   const { esp, eng, stateIdiom } = UseContextIdiom();
+  const [len, setLen] = useState(stateIdiom);
 
   const espaniol = () => {
     localStorage.setItem('midiom', 'es');

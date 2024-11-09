@@ -11,7 +11,7 @@ import {
   TbBrandVue,
 } from 'react-icons/tb';
 import { IoLogoNodejs } from 'react-icons/io';
-import { SiMongodb, SiExpress, SiTypescript } from 'react-icons/si';
+import { SiMongodb, SiExpress, SiTypescript, SiAstro  } from 'react-icons/si';
 import { GrMysql } from 'react-icons/gr';
 import { FaAngular } from 'react-icons/fa';
 
@@ -80,7 +80,7 @@ export default function Skills() {
             </Swiper>
           </div>
         </div>
-        <div className='flex justify-center my-20'>
+        <div className='flex justify-center my-20 text-center'>
           <div className='text-xl leading-9 max-w-lg p-4 md:p-0'>
             <p>
               {len
@@ -125,6 +125,10 @@ const skill = [
   {
     name: 'Angular Js',
     icon: FaAngular,
+  },
+  {
+    name: 'Astro',
+    icon: SiAstro,
   },
   {
     name: 'Tailwind Css',

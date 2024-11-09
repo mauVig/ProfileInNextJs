@@ -12,11 +12,11 @@ const navigation = [
     href: 'https://www.linkedin.com/in/maurovigliero/',
     icon: TbBrandLinkedin,
   },
-  {
-    name: 'Instagram',
-    href: 'https://www.instagram.com/maurook789/',
-    icon: TbBrandInstagram,
-  },
+  // {
+  //   name: 'Instagram',
+  //   href: 'https://www.instagram.com/maurook789/',
+  //   icon: TbBrandInstagram,
+  // },
   {
     name: 'Github',
     href: 'https://github.com/mauVig',
@@ -26,10 +26,13 @@ const navigation = [
 export default function Footer() {
   const { stateIdiom } = UseContextIdiom();
   const [len, setLen] = useState(stateIdiom);
+  
   useEffect(() => {
     setLen(stateIdiom);
   }, [stateIdiom]);
+
   const year = new Date().getFullYear();
+
   return (
     <footer className='bg-black-600 text-gray-500'>
       <div className='max-w-7xl mx-auto py-8 px-4 overflow-hidden sm:px-6 lg:px-8'>

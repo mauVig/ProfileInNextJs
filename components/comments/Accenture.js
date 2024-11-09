@@ -3,8 +3,8 @@ import { UseContextIdiom } from '../../context/ContextIdiom';
 import LinkToPages from './LinksToPages';
 
 export default function Accenture() {
-  const [len, setLen] = useState(stateIdiom);
   const { stateIdiom } = UseContextIdiom();
+  const [len, setLen] = useState(stateIdiom);
 
   useEffect(() => {
     setLen(stateIdiom);

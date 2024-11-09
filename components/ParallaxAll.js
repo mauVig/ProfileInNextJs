@@ -37,7 +37,7 @@ export default function ParallaxLoesen({ name }) {
       <div className={`overflow-hidden ${st.diagonal}`}>
         <Parallax speed={-90}>
           <picture className={`-z-10 `}>
-            <img src={who} width='100%' alt={altText} />
+            <img src={who} width='100%' alt={altText[name]} />
           </picture>
         </Parallax>
       </div>
