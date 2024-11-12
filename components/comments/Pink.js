@@ -27,7 +27,9 @@ export default function Pink() {
             >
               <div>
                 <h2 className='text-3xl text-skin-500'>Pink</h2>
-                <p className='text-black-200'>Visual studio</p>
+                <p className='text-black-200'>
+                  {len ? 'Estudio de diseño grafico' : 'Graphic design studio'} 
+                </p>
               </div>
             </a>
           </div>
