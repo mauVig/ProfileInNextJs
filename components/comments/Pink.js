@@ -38,78 +38,23 @@ export default function Pink() {
               &quot;
               {len ? (
                 <>
-                  Esta es una página
-                  <strong className='text-skin-600'> Freelance </strong> que
-                  construir para una agencia de diseño. Mi cliente me facilitó
-                  el diseño completo, tanto como para Mobile y desktop. En este
-                  proyecto utilizo
+                  En este proyecto tome la decisión de hacerlo solamente con <span className='text-skin-600 font-semibold'> HTML </span>,
+                  <span className='text-skin-600 font-semibold'> CSS </span>y
+                  <span className='text-skin-600 font-semibold'>
+                    {' '}
+                    JAVASCRIPT
+                  </span>, sin ninguna ayuda de un framework. Para lograr la expresión artística de este sitio también quise que el código sea construido como si tallara a mano una escultura.
+                </>
+              ) : (
+                <>
+                  For this project I made the decision to do it only with 
                   <span className='text-skin-600 font-semibold'> HTML </span>,
                   <span className='text-skin-600 font-semibold'> CSS </span>y
                   <span className='text-skin-600 font-semibold'>
                     {' '}
-                    javascript
-                  </span>
-                  . Agregando tambien, una librería llamada
-                  <a
-                    href='https://swiperjs.com/'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    <span className='text-skin-600 font-semibold'>
-                      {' '}
-                      Swiper{' '}
-                    </span>
-                  </a>
-                  para hacer un slide y tambien use
-                  <a
-                    href='https://scrollrevealjs.org/'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    <span className='text-skin-600 font-semibold'>
-                      {' '}
-                      ScrollReveal
-                    </span>
-                  </a>
-                  .
-                </>
-              ) : (
-                <>
-                  This is a
-                  <strong className='text-skin-500'> freelance </strong>
-                  page to build for a design agency. To develop this website, my
-                  client gave me the complete design for both Mobile and
-                  desktop, and I decided to do this project with
-                  <span className='text-skin-600 font-semibold'> HTML</span>,
-                  <span className='text-skin-600 font-semibold'> CSS </span>
-                  and
-                  <span className='text-skin-600 font-semibold'>
-                    {' '}
-                    javascript
-                  </span>
-                  , adding a library called
-                  <a
-                    href='https://swiperjs.com/'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    <span className='text-skin-600 font-semibold'>
-                      {' '}
-                      Swiper{' '}
-                    </span>
-                  </a>
-                  to make a slide and also use
-                  <a
-                    href='https://scrollrevealjs.org/'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    <span className='text-skin-600 font-semibold'>
-                      {' '}
-                      ScrollReveal
-                    </span>
-                  </a>
-                  .
+                    JAVASCRIPT,
+                  </span>{' '}
+                  without any help from a framework. To achieve the artistic expression of this site I also wanted the code to be built as if I were carving a sculpture by hand.
                 </>
               )}
               &quot;

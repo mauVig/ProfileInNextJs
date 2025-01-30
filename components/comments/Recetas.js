@@ -42,13 +42,13 @@ export default function Recetas() {
                 <>
                   Esta es una página hice en un{' '}
                   <strong className='text-skin-500'>bootcamp{' '}</strong>
-                  dentro de la empresa <strong className='text-skin-500'> Accenture</strong>, desarrollando el front-end de una app dinámica. Utilicé tecnologías como React y Tailwind. Y asi pude demostrar a la empresa mis habilidades.
+                  dentro de la empresa <strong className='text-skin-500'> Accenture</strong>, desarrollando el front-end de una app dinámica. Utilicé tecnologías como React y Tailwind. 
                 </>
               ) : (
                 <>
                   This is a page I made in a{' '}
                   <strong className='text-skin-500'>bootcamp{' '}</strong>
-                  within Accenture, developing the front-end of a dynamic application. It uses technologies like React and Tailwind. And so I was able to show the company my skills.
+                  within Accenture, developing the front-end of a dynamic application. It uses technologies like React and Tailwind.
                 </>
               )}
               &quot;

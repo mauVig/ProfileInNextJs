@@ -40,7 +40,7 @@ export default function Accenture() {
               &quot;
               {len ? (
                 <>
-                  Estoy trabajando en esta 
+                Estuve trabajando en esta 
                   <strong className='text-skin-600'>
                   {' '}empresa{' '}
                   </strong>
@@ -52,7 +52,7 @@ export default function Accenture() {
                   <span className='text-skin-600 font-semibold'>
                   {' '}SharePoints
                   </span>
-                  . Y tambien trabajando con las tecnologías
+                  . Y en el segundo proyecto estuve  trabajando con las tecnologías
                   <span className='text-skin-600 font-semibold'>{' '}Angular</span>,
                   <span className='text-skin-600 font-semibold'>{' '}
                     typescript
@@ -63,8 +63,12 @@ export default function Accenture() {
                 </>
               ) : (
                 <>
-                  I have been working in this{' '}
-                  <strong className='text-skin-500'>company </strong>since 2022 until 2024. I can say that during this time I will learn to work on projects with amazing teams and people. I have been in two projects, the first one I worked with React technology making an application to do marketing through SharePoints. And also working with Angular, Typescript and ngrx technologies making a page to evaluate business opportunities.
+                  I had been working in this{' '}
+                  <strong className='text-skin-500'>company </strong>since 2022 until 2024. I can say that during this time I will learn to work on projects with amazing teams and people. I have been in two projects, the first one I worked with  <span className='text-skin-600 font-semibold'> React </span> technology making an application to do marketing through  <span className='text-skin-600 font-semibold'>
+                  {' '}SharePoints
+                  </span>.And in the second project I was working with <span className='text-skin-600 font-semibold'>{' '}Angular</span>,  <span className='text-skin-600 font-semibold'>{' '}
+                    typescript
+                  </span>{' '} and <span className='text-skin-600 font-semibold'>ngrx</span> technologies making a page to evaluate business opportunities.
                 </>
               )}
               &quot;

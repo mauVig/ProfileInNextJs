@@ -27,7 +27,8 @@ export default function Loesen() {
           <div className='flex items-center gap-3'>
             <a
               href='https://loesen.co/es'
-              target='_blanck'
+              target='_blank'
+              rel='noreferrer'
               className='flex items-center gap-3'
             >
               <div>
@@ -45,14 +46,13 @@ export default function Loesen() {
               &quot;
               {len ? (
                 <>
-                  Este fue mi primer trabajo en una empresa como programador
+                  Esta empresa fue en donde tuve mi primer trabajo como desarrollador
                   Front-end. Utilicé tecnologías como
                   <span className='text-skin-600 font-semibold'>
                     {' '}
                     TailwindCSS{' '}
                   </span>{' '}
-                  y <span className='text-skin-600 font-semibold'>NextJS</span>,
-                  en varias páginas de la empresa.
+                  y <span className='text-skin-600 font-semibold'>NextJS</span>.
                 </>
               ) : (
                 <>
