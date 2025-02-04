@@ -14,6 +14,7 @@ import Accenture from '../components/comments/Accenture';
 import st from '../styles/details.module.css';
 
 import { UseContextIdiom } from '../context/ContextIdiom';
+import Adviters from '../components/comments/Adviters';
 
 export default function Home() {
   const { stateIdiom } = UseContextIdiom();
@@ -42,18 +43,19 @@ export default function Home() {
           <Skills />
         </div>
       </section>
-      
+
       <section className='relative bg-black-500 z-30 pt-20 text-gray-500'>
-          <h2 className='pb-14 text-4xl text-center mb-26'>
-            {len ? 'Experiencia' : 'Experience'}
-          </h2>
+        <h2 className='pb-14 text-4xl text-center mb-26'>
+          {len ? 'Experiencia' : 'Experience'}
+        </h2>
       </section>
-      <div className=' text-gray-500 bg-black-500'>
-        <Loesen />
+
+      <div className=' text-gray-500 bg-black-500 pt-[8rem]'>
+        <Adviters />
       </div>
       <section className='relative bg-black-500'>
         <div className='text-gray-500'>
-          <ParallaxAll name='logipartes' />
+          <ParallaxAll name='adviters' />
         </div>
       </section>
 
@@ -65,7 +67,7 @@ export default function Home() {
           <ParallaxAll name='pink' />
         </div>
       </section>
-      
+
       <div className=' text-gray-500 bg-black-500 pt-[8rem]'>
         <Accenture />
       </div>
@@ -74,7 +76,14 @@ export default function Home() {
           <ParallaxAll name='accenture' />
         </div>
       </section>
-
+      <div className=' text-gray-500 bg-black-500'>
+        <Loesen />
+      </div>
+      <section className='relative bg-black-500'>
+        <div className='text-gray-500'>
+          <ParallaxAll name='logipartes' />
+        </div>
+      </section>
       <div className=' text-gray-500 bg-black-500 pt-[8rem]'>
         <Recetas />
       </div>
