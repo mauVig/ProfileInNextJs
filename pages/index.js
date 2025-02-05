@@ -49,7 +49,14 @@ export default function Home() {
           {len ? 'Experiencia' : 'Experience'}
         </h2>
       </section>
-
+      <div className=' text-gray-500 bg-black-500'>
+        <Loesen />
+      </div>
+      <section className='relative bg-black-500'>
+        <div className='text-gray-500'>
+          <ParallaxAll name='logipartes' />
+        </div>
+      </section>
       <div className=' text-gray-500 bg-black-500 pt-[8rem]'>
         <Adviters />
       </div>
@@ -58,7 +65,7 @@ export default function Home() {
           <ParallaxAll name='adviters' />
         </div>
       </section>
-
+    
       <div className=' text-gray-500 bg-black-500 pt-[8rem]'>
         <Pink />
       </div>
@@ -76,14 +83,7 @@ export default function Home() {
           <ParallaxAll name='accenture' />
         </div>
       </section>
-      <div className=' text-gray-500 bg-black-500'>
-        <Loesen />
-      </div>
-      <section className='relative bg-black-500'>
-        <div className='text-gray-500'>
-          <ParallaxAll name='logipartes' />
-        </div>
-      </section>
+   
       <div className=' text-gray-500 bg-black-500 pt-[8rem]'>
         <Recetas />
       </div>

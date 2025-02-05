@@ -13,6 +13,7 @@ export default function ParallaxLoesen({ name }) {
     recetas: 'Es el repositorio del bootcamp recetas',
     accenture: 'Es el repositorio del bootcamp de Accenture',
     adviters: 'Es el repositorio de adviters',
+    logipartes: 'Es el repositorio de logipartes',
   });
 
   const cell = useMediaQuery({
