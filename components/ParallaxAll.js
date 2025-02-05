@@ -12,7 +12,7 @@ export default function ParallaxLoesen({ name }) {
     pink: 'Es el repositorio de lifeispink.org',
     recetas: 'Es el repositorio del bootcamp recetas',
     accenture: 'Es el repositorio del bootcamp de Accenture',
-    adviters: 'Es el repositorio de adviters',
+    Adviters: 'Es el repositorio de adviters',
   });
 
   const cell = useMediaQuery({
