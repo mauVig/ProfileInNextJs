@@ -8,12 +8,10 @@ export default function NavBar() {
   const [len, setLen] = useState(stateIdiom);
 
   const espaniol = () => {
-    localStorage.setItem('midiom', 'es');
     esp();
   };
 
   const ingles = () => {
-    localStorage.setItem('midiom', 'en');
     eng();
   };
 
