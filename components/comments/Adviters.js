@@ -38,7 +38,7 @@ export default function Adviters() {
               &quot;
               {len ? (
                 <>
-                    Realicé este proyecto utilizando las últimas tecnologías del mercado. Para el maquetado y el armado del proyecto utilicé el framework <span className='text-skin-600 font-semibold'>Astro</span> Junto con la librería <span className='text-skin-600 font-semibold'>Tailwind</span>. este proyecto en particular puede lograr hacer varios <span className='text-skin-600 font-semibold'>efectos al hacer scroll</span>.
+                    Realicé este proyecto utilizando las últimas tecnologías del mercado. Para el maquetado y el armado del proyecto utilicé el framework <span className='text-skin-600 font-semibold'>Astro</span> junto con la librería <span className='text-skin-600 font-semibold'>Tailwind</span>. este proyecto en particular puede lograr hacer varios <span className='text-skin-600 font-semibold'>efectos al hacer scroll</span>.
                 </>
               ) : (
                 <>

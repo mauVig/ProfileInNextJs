@@ -13,10 +13,10 @@ export default function Loesen() {
   return (
     <>
       <article className='max-w-5xl mx-auto flex flex-col md:flex-row items-start gap-6 p-4 md:p-0'>
-        <a href='https://loesen.co/es' target='_blanck' className='block'>
+        <a href='https://motionclinic.com.ar/' target='_blanck' className='block'>
           <picture>
             <img
-              src='/img/loesen.png'
+              src='/img/motion.png'
               alt='Logo de Loesen'
               width={50}
               className='rounded-full'
@@ -26,17 +26,17 @@ export default function Loesen() {
         <div className='md:w-1/2'>
           <div className='flex items-center gap-3'>
             <a
-              href='https://loesen.co/es'
+              href='https://motionclinic.com.ar/'
               target='_blank'
               rel='noreferrer'
               className='flex items-center gap-3'
             >
               <div>
-                <h2 className='text-3xl text-skin-500'>Loesen</h2>
+                <h2 className='text-3xl text-skin-500'>Motion Clinic</h2>
                 <p className='text-black-200'>
                   {len
-                    ? 'Soluciones digitales para la posventa automotriz'
-                    : 'Digital solutions for the automotive aftermarket'}
+                    ? 'Centro medico'
+                    : 'Medical center'}
                 </p>
               </div>
             </a>
@@ -46,25 +46,21 @@ export default function Loesen() {
               &quot;
               {len ? (
                 <>
-                  Esta empresa fue en donde tuve mi primer trabajo como desarrollador
-                  Front-end. Utilicé tecnologías como
-                  <span className='text-skin-600 font-semibold'>
-                    {' '}
-                    TailwindCSS{' '}
-                  </span>{' '}
-                  y <span className='text-skin-600 font-semibold'>NextJS</span>.
+                En este proyecto también utilicé tecnologías como 
+                <span className='text-skin-600 font-semibold'> Astro </span>
+                junto a 
+                <span className='text-skin-600 font-semibold'>React</span> y 
+                <span className='text-skin-600 font-semibold'>tailwind</span>. Pero lo que tengo que destacar de este sitio web es que a través del scroll se logró un gran dinamismo en la página.
                 </>
               ) : (
                 <>
-                  This was my first job in a company as a Front-end programmer.
-                  I used technologies such as
+                  In this project I also used technologies such as
                   <span className='text-skin-600 font-semibold'>
                     {' '}
-                    TailwindCSS{' '}
+                    Astro{' '}
                   </span>
-                  and{' '}
-                  <span className='text-skin-600 font-semibold'>NextJS</span>,
-                  on some company pages.
+                  along with <span className='text-skin-600 font-semibold'>React</span> and{' '}
+                  <span className='text-skin-600 font-semibold'>tailwind</span>. But what I have to highlight about this website is that through the scroll a great dynamism was achieved on the page.
                 </>
               )}
               &quot;
@@ -78,16 +74,8 @@ export default function Loesen() {
 }
 
 const links = [
-  // {
-  //   name: 'Logipartes.com.ar',
-  //   href: 'https://logipartes.com.ar/',
-  // },
   {
-    name: 'Fabricante.logipartes.com.ar',
-    href: 'https://fabricante.logipartes.com.ar/',
-  },
-  {
-    name: 'Casas.logipartes.com.ar',
-    href: 'https://casas.logipartes.com.ar',
+    name: 'motionclinic.com.ar',
+    href: 'https://motionclinic.com.ar/',
   },
 ];

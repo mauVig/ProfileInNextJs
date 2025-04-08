@@ -14,6 +14,7 @@ export default function ParallaxLoesen({ name }) {
     accenture: 'Es el repositorio del bootcamp de Accenture',
     adviters: 'Es el repositorio de adviters',
     logipartes: 'Es el repositorio de logipartes',
+    motion: 'Es el repositorio de motionclinic',
   });
 
   const cell = useMediaQuery({
@@ -29,9 +30,9 @@ export default function ParallaxLoesen({ name }) {
   useEffect(() => {
     setAltText(altText[name]);
 
-    if (pc) setWho(`/img/${name}-desk.png`);
-    if (tablet) setWho(`/img/${name}-tablet.png`);
-    if (cell) setWho(`/img/${name}-cel.png`);
+    if (pc) setWho(`/img/${name}-desk.webp`);
+    if (tablet) setWho(`/img/${name}-tablet.webp`);
+    if (cell) setWho(`/img/${name}-cel.webp`);
   }, []);
 
   return (

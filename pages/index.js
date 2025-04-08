@@ -12,9 +12,10 @@ import Pink from '../components/comments/Pink';
 import Recetas from '../components/comments/Recetas';
 import Accenture from '../components/comments/Accenture';
 import st from '../styles/details.module.css';
+import Adviters from '../components/comments/Adviters';
+import Motion from '../components/comments/Motion';
 
 import { UseContextIdiom } from '../context/ContextIdiom';
-import Adviters from '../components/comments/Adviters';
 
 export default function Home() {
   const { stateIdiom } = UseContextIdiom();
@@ -55,6 +56,14 @@ export default function Home() {
       <section className='relative bg-black-500'>
         <div className='text-gray-500'>
           <ParallaxAll name='logipartes' />
+        </div>
+      </section>
+      <div className=' text-gray-500 bg-black-500 pt-[8rem]'>
+        <Motion />
+      </div>
+      <section className='relative bg-black-500'>
+        <div className='text-gray-500'>
+          <ParallaxAll name='motion' />
         </div>
       </section>
       <div className=' text-gray-500 bg-black-500 pt-[8rem]'>

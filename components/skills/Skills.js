@@ -10,8 +10,8 @@ import {
   TbBrandPhp,
   TbBrandVue,
 } from 'react-icons/tb';
-import { IoLogoNodejs } from 'react-icons/io';
 import { SiMongodb, SiExpress, SiTypescript, SiAstro  } from 'react-icons/si';
+import { IoLogoNodejs } from 'react-icons/io';
 import { GrMysql } from 'react-icons/gr';
 import { FaAngular } from 'react-icons/fa';
 

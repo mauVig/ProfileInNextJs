@@ -2,7 +2,6 @@
 import {
   TbCloudDownload,
   TbBrandLinkedin,
-  TbBrandInstagram,
   TbBrandGithub,
 } from 'react-icons/tb';
 
