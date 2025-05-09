@@ -49,8 +49,9 @@ export default function Loesen() {
                 En este proyecto también utilicé tecnologías como 
                 <span className='text-skin-600 font-semibold'> Astro </span>
                 junto a 
-                <span className='text-skin-600 font-semibold'>React</span> y 
-                <span className='text-skin-600 font-semibold'>tailwind</span>. Pero lo que tengo que destacar de este sitio web es que a través del scroll se logró un gran dinamismo en la página.
+                <span className='text-skin-600 font-semibold'> React</span>,
+                <span className='text-skin-600 font-semibold'> Nextjs</span> y 
+                <span className='text-skin-600 font-semibold'> tailwind</span>. Pero lo que tengo que destacar de este sitio web es que a través del scroll se logró un gran dinamismo en la página.
                 </>
               ) : (
                 <>
